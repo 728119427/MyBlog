@@ -25,12 +25,13 @@ spring:
 #\u65E5\u5FD7\u914D\u7F6E
 logging:
   level:
+    root: info
     com:
       seven:
-        myblog: info
+        myblog:
           mapper: debug
-#  file:
-#    path: log/
+  file:
+    path: log/
 
 #mybatis \u914D\u7F6E
 mybatis:
