@@ -19,9 +19,12 @@
     <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="comment_count" jdbcType="INTEGER" property="commentCount" />
   </resultMap>
+
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.seven.myblog.model.Blog">
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
   </resultMap>
+
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

@@ -1,4 +1,4 @@
-#\u6570\u636E\u5E93\u914D\u7F6E
+#数据源配置
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -22,7 +22,7 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
-#\u65E5\u5FD7\u914D\u7F6E
+#日志配置
 logging:
   level:
     root: info
@@ -33,9 +33,17 @@ logging:
   file:
     path: log/
 
-#mybatis \u914D\u7F6E
+#mybatis配置
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.seven.myblog.model
   configuration:
     map-underscore-to-camel-case: true
+
+#pageHelper设置
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
