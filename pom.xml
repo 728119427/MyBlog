@@ -75,8 +75,29 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.15</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sun.jdmk</groupId>
+                    <artifactId>jmxtools</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jmx</groupId>
+                    <artifactId>jmxri</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.jms</groupId>
+                    <artifactId>jms</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
+        <!--flyway-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>5.2.4</version>
+        </dependency>
+        <!--mybatis-spring-boot-starter-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -90,16 +111,76 @@
             <version>1.9.4</version>
         </dependency>
 
+
+
     </dependencies>
 
+
+    <!--需要放在build上面，这是mysqlLimit插件使用的,不用可以不加-->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>xxg-repository</id>
+            <url>http://repo.maven.xxgblog.com/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <!--插件-->
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+        <!--flyway-plugin-->
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>5.2.4</version>
+                <configuration>
+                    <url>jdbc:mysql://localhost:3306/blog?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</url>
+                    <user>root</user>
+                    <password>root</password>
+                    <driver>com.mysql.cj.jdbc.Driver</driver>
+                </configuration>
+            </plugin>
+
+            <!--mybatis-generator-->
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.3.7</version>
+                <configuration>
+                    <!--mybatis的代码生成器的配置文件-->
+                    <configurationFile>src/main/resources/generatorConfig.xml</configurationFile>
+                    <!--允许覆盖生成的文件-->
+                    <overwrite>true</overwrite>
+                    <!--将当前pom的依赖项添加到生成器的类路径中-->
+                    <!--<includeCompileDependencies>true</includeCompileDependencies>-->
+                </configuration>
+                <dependencies>
+                    <!--mybatis-generator插件的依赖包-->
+                    <!--<dependency>-->
+                    <!--<groupId>org.mybatis.generator</groupId>-->
+                    <!--<artifactId>mybatis-generator-core</artifactId>-->
+                    <!--<version>1.3.7</version>-->
+                    <!--</dependency>-->
+                    <!-- mysql的JDBC驱动 -->
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>8.0.21</version>
+                    </dependency>
+                    <!--mysqlLimit插件，支持mybatis-generator实现分页功能，使用limit语句-->
+                    <dependency>
+                        <groupId>com.xxg</groupId>
+                        <artifactId>mbg-limit-plugin</artifactId>
+                        <version>1.0.0</version>
+                    </dependency>
+                </dependencies>
+
+            </plugin>
+
         </plugins>
     </build>
 

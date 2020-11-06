@@ -122,3 +122,968 @@
 2020-11-05 18:52:04.953  INFO 30736 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
 2020-11-05 18:52:04.956  INFO 30736 --- [http-nio-8080-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/index/aaa', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[{}, org.apache.catalina.connector.RequestFacade@38928c5, aaa]}
 2020-11-05 18:52:04.959  INFO 30736 --- [http-nio-8080-exec-2] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 20:13:02.827  INFO 30736 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 20:13:02.932  INFO 30736 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 30736 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 20:13:02.932  INFO 30736 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 20:13:03.021  WARN 30736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 20:13:03.036  WARN 30736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 20:13:03.146  INFO 30736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 20:13:03.146  INFO 30736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 20:13:03.146  INFO 30736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 20:13:03.167  INFO 30736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 20:13:03.167  INFO 30736 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 233 ms
+2020-11-05 20:13:03.250  INFO 30736 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 20:13:03.273  INFO 30736 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 20:13:03.483  INFO 30736 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-05 20:13:03.493  INFO 30736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-05 20:13:03.496  INFO 30736 --- [restartedMain] com.seven.myblog.MyblogApplication       : Started MyblogApplication in 0.586 seconds (JVM running for 5111.926)
+2020-11-05 20:13:03.497  INFO 30736 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-05 20:48:52.159  INFO 37916 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 37916 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 20:48:52.161  INFO 37916 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 20:48:52.195  INFO 37916 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 20:48:52.195  INFO 37916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 20:48:52.195  INFO 37916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 20:48:52.470  WARN 37916 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 20:48:52.541  WARN 37916 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 20:48:52.990  INFO 37916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 20:48:52.996  INFO 37916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 20:48:52.996  INFO 37916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 20:48:53.065  INFO 37916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 20:48:53.066  INFO 37916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 871 ms
+2020-11-05 20:48:53.247  INFO 37916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 20:48:53.318  INFO 37916 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 20:48:53.679  INFO 37916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-05 20:48:53.714  INFO 37916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-05 20:48:53.783  INFO 37916 --- [restartedMain] com.seven.myblog.MyblogApplication       : Started MyblogApplication in 1.902 seconds (JVM running for 3.053)
+2020-11-05 20:49:02.168  INFO 37916 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-05 20:49:02.168  INFO 37916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-05 20:49:02.174  INFO 37916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-05 20:49:02.190  INFO 37916 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 20:49:02.194  INFO 37916 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 20:49:02.439 ERROR 37916 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) [thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) [thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "page.totalElements" (template: "index" - line 48, col 75)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "page.totalElements" (template: "index" - line 48, col 75)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'totalElements' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 69 common frames omitted
+
+2020-11-05 20:49:02.442 ERROR 37916 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'totalElements' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337) ~[spring-expression-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+
+2020-11-05 20:54:22.992  INFO 16880 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 16880 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 20:54:22.994  INFO 16880 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 20:54:23.030  INFO 16880 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 20:54:23.031  INFO 16880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 20:54:23.031  INFO 16880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 20:54:23.304  WARN 16880 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 20:54:23.374  WARN 16880 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 20:54:23.817  INFO 16880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 20:54:23.823  INFO 16880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 20:54:23.823  INFO 16880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 20:54:23.890  INFO 16880 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 20:54:23.891  INFO 16880 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2020-11-05 20:54:24.075  INFO 16880 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 20:54:24.146  INFO 16880 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 20:54:24.508  INFO 16880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-05 20:54:24.536  INFO 16880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-05 20:54:24.595  INFO 16880 --- [restartedMain] com.seven.myblog.MyblogApplication       : Started MyblogApplication in 1.878 seconds (JVM running for 3.066)
+2020-11-05 20:54:30.057  INFO 16880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-05 20:54:30.057  INFO 16880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-05 20:54:30.063  INFO 16880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-11-05 20:54:30.076  INFO 16880 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 20:54:30.081  INFO 16880 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:01:11.974  INFO 16880 --- [http-nio-8080-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:01:11.974  INFO 16880 --- [http-nio-8080-exec-2] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:02:22.471  INFO 16880 --- [http-nio-8080-exec-6] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:02:22.471  INFO 16880 --- [http-nio-8080-exec-6] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:03:47.117  INFO 16080 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 16080 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 21:03:47.119  INFO 16080 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 21:03:47.163  INFO 16080 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 21:03:47.163  INFO 16080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 21:03:47.163  INFO 16080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 21:03:47.457  WARN 16080 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 21:03:47.526  WARN 16080 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 21:03:47.981  INFO 16080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 21:03:47.987  INFO 16080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 21:03:47.987  INFO 16080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 21:03:48.070  INFO 16080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 21:03:48.070  INFO 16080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 906 ms
+2020-11-05 21:03:48.262  INFO 16080 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 21:03:48.329  INFO 16080 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 21:03:48.732  INFO 16080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-05 21:03:48.773  INFO 16080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-05 21:03:48.840  INFO 16080 --- [restartedMain] com.seven.myblog.MyblogApplication       : Started MyblogApplication in 2.048 seconds (JVM running for 3.329)
+2020-11-05 21:04:02.050  INFO 16080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-05 21:04:02.050  INFO 16080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-05 21:04:02.056  INFO 16080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-11-05 21:04:02.070  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:04:02.074  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:05:50.763  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:05:50.763  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:06:41.677  INFO 16080 --- [http-nio-8080-exec-4] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:06:41.678  INFO 16080 --- [http-nio-8080-exec-4] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:06:45.943  INFO 16080 --- [http-nio-8080-exec-7] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:06:45.944  INFO 16080 --- [http-nio-8080-exec-7] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:07:16.848  INFO 16080 --- [http-nio-8080-exec-5] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:07:16.849  INFO 16080 --- [http-nio-8080-exec-5] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:11:00.898  INFO 16080 --- [http-nio-8080-exec-5] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:11:00.898  INFO 16080 --- [http-nio-8080-exec-5] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:11:11.193  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:11:11.194  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 21:53:21.001  INFO 16080 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 21:53:21.175  INFO 16080 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 16080 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 21:53:21.175  INFO 16080 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 21:53:21.278  WARN 16080 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 21:53:21.291  WARN 16080 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 21:53:21.401  INFO 16080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 21:53:21.402  INFO 16080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 21:53:21.402  INFO 16080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 21:53:21.435  INFO 16080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 21:53:21.436  INFO 16080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 260 ms
+2020-11-05 21:53:21.521  INFO 16080 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 21:53:21.543  INFO 16080 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 21:53:21.771  INFO 16080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-05 21:53:21.788  INFO 16080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-05 21:53:21.791  INFO 16080 --- [restartedMain] com.seven.myblog.MyblogApplication       : Started MyblogApplication in 0.638 seconds (JVM running for 2976.28)
+2020-11-05 21:53:21.793  INFO 16080 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-05 21:53:21.798  INFO 16080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-05 21:53:21.799  INFO 16080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-05 21:53:21.805  INFO 16080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-11-05 21:53:21.808  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.index', args=[]}
+2020-11-05 21:53:21.811  INFO 16080 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-05 23:20:18.571  INFO 25688 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 25688 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:20:18.574  INFO 25688 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:20:18.624  INFO 25688 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:20:18.624  INFO 25688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:20:18.624  INFO 25688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:20:19.062  WARN 25688 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:20:19.170  WARN 25688 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:20:19.878  INFO 25688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:20:19.887  INFO 25688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:20:19.887  INFO 25688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:20:20.003  INFO 25688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:20:20.003  INFO 25688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1378 ms
+2020-11-05 23:20:20.306  INFO 25688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:20:20.411  INFO 25688 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:20:20.749  WARN 25688 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unsatisfied dependency expressed through method 'flywayInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flyway' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.flywaydb.core.Flyway]: Factory method 'flyway' threw exception; nested exception is org.springframework.boot.autoconfigure.flyway.FlywayMigrationScriptMissingException: Cannot find migration scripts in: [classpath:db/migration] (please add migration scripts or check your Flyway configuration)
+2020-11-05 23:20:20.750  INFO 25688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:20:20.753  INFO 25688 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:20:20.771  INFO 25688 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:20:20.778 ERROR 25688 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Flyway failed to initialize: none of the following migration scripts locations could be found:
+
+	- classpath:db/migration
+
+
+Action:
+
+Review the locations above or check your Flyway configuration
+
+2020-11-05 23:21:50.501  INFO 20668 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 20668 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:21:50.503  INFO 20668 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:21:50.546  INFO 20668 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:21:50.546  INFO 20668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:21:50.546  INFO 20668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:21:50.823  WARN 20668 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:21:50.895  WARN 20668 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:21:51.347  INFO 20668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:21:51.353  INFO 20668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:21:51.353  INFO 20668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:21:51.421  INFO 20668 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:21:51.421  INFO 20668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 875 ms
+2020-11-05 23:21:51.594  INFO 20668 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:21:51.663  INFO 20668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:21:51.872  WARN 20668 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unsatisfied dependency expressed through method 'flywayInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flyway' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.flywaydb.core.Flyway]: Factory method 'flyway' threw exception; nested exception is org.springframework.boot.autoconfigure.flyway.FlywayMigrationScriptMissingException: Cannot find migration scripts in: [classpath:db/migration] (please add migration scripts or check your Flyway configuration)
+2020-11-05 23:21:51.873  INFO 20668 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:21:51.875  INFO 20668 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:21:51.888  INFO 20668 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:21:51.892 ERROR 20668 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Flyway failed to initialize: none of the following migration scripts locations could be found:
+
+	- classpath:db/migration
+
+
+Action:
+
+Review the locations above or check your Flyway configuration
+
+2020-11-05 23:22:25.934  INFO 12192 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 12192 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:22:25.936  INFO 12192 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:22:25.974  INFO 12192 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:22:25.974  INFO 12192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:22:25.974  INFO 12192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:22:26.244  WARN 12192 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:22:26.313  WARN 12192 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:22:26.777  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:22:26.784  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:22:26.784  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:22:26.865  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:22:26.865  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 891 ms
+2020-11-05 23:22:27.072  INFO 12192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:22:27.160  INFO 12192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:22:27.394  WARN 12192 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unsatisfied dependency expressed through method 'flywayInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flyway' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.flywaydb.core.Flyway]: Factory method 'flyway' threw exception; nested exception is org.springframework.boot.autoconfigure.flyway.FlywayMigrationScriptMissingException: Cannot find migration scripts in: [classpath:db/migration] (please add migration scripts or check your Flyway configuration)
+2020-11-05 23:22:27.395  INFO 12192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:22:27.397  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:22:27.410  INFO 12192 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:22:27.414 ERROR 12192 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Flyway failed to initialize: none of the following migration scripts locations could be found:
+
+	- classpath:db/migration
+
+
+Action:
+
+Review the locations above or check your Flyway configuration
+
+2020-11-05 23:22:53.314  INFO 19784 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 19784 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:22:53.316  INFO 19784 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:22:53.355  INFO 19784 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:22:53.355  INFO 19784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:22:53.355  INFO 19784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:22:53.644  WARN 19784 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:22:53.716  WARN 19784 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:22:54.174  INFO 19784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:22:54.179  INFO 19784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:22:54.179  INFO 19784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:22:54.250  INFO 19784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:22:54.250  INFO 19784 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 894 ms
+2020-11-05 23:22:54.436  INFO 19784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:22:54.507  INFO 19784 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:22:54.751  INFO 19784 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 6.4.4 by Redgate
+2020-11-05 23:22:54.934  INFO 19784 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3306/blog (MySQL 5.5)
+2020-11-05 23:22:54.954  WARN 19784 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.license.FlywayEditionUpgradeRequiredException: Flyway Enterprise Edition or MySQL upgrade required: MySQL 5.5 is no longer supported by Flyway Community Edition, but still supported by Flyway Enterprise Edition.
+2020-11-05 23:22:54.958  INFO 19784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:22:54.960  INFO 19784 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:22:54.968  INFO 19784 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:22:54.977 ERROR 19784 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.license.FlywayEditionUpgradeRequiredException: Flyway Enterprise Edition or MySQL upgrade required: MySQL 5.5 is no longer supported by Flyway Community Edition, but still supported by Flyway Enterprise Edition.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at com.seven.myblog.MyblogApplication.main(MyblogApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+Caused by: org.flywaydb.core.internal.license.FlywayEditionUpgradeRequiredException: Flyway Enterprise Edition or MySQL upgrade required: MySQL 5.5 is no longer supported by Flyway Community Edition, but still supported by Flyway Enterprise Edition.
+	at org.flywaydb.core.internal.database.base.Database.ensureDatabaseNotOlderThanOtherwiseRecommendUpgradeToFlywayEdition(Database.java:173) ~[flyway-core-6.4.4.jar:na]
+	at org.flywaydb.core.internal.database.mysql.MySQLDatabase.ensureSupported(MySQLDatabase.java:292) ~[flyway-core-6.4.4.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:514) ~[flyway-core-6.4.4.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:159) ~[flyway-core-6.4.4.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65) ~[spring-boot-autoconfigure-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 24 common frames omitted
+
+2020-11-05 23:27:19.974  INFO 29424 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 29424 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:27:19.976  INFO 29424 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:27:20.013  INFO 29424 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:27:20.014  INFO 29424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:27:20.014  INFO 29424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:27:20.298  WARN 29424 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:27:20.375  WARN 29424 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:27:20.844  INFO 29424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:27:20.850  INFO 29424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:27:20.850  INFO 29424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:27:20.931  INFO 29424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:27:20.931  INFO 29424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 917 ms
+2020-11-05 23:27:21.145  INFO 29424 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:27:21.224  INFO 29424 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:27:21.466  INFO 29424 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-11-05 23:27:21.621  INFO 29424 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3306/blog (MySQL 5.5)
+2020-11-05 23:27:21.681  INFO 29424 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.020s)
+2020-11-05 23:27:21.777  INFO 29424 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: `blog`.`flyway_schema_history`
+2020-11-05 23:27:21.806  INFO 29424 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `blog`: << Empty Schema >>
+2020-11-05 23:27:21.808  INFO 29424 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `blog` to version 1.1 - create table user
+2020-11-05 23:27:21.811  WARN 29424 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4 (SQL State: 42000 - Error Code: 1064)
+2020-11-05 23:27:21.812 ERROR 29424 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migration of schema `blog` to version 1.1 - create table user failed! Please restore backups and roll back database and code!
+2020-11-05 23:27:21.819  WARN 29424 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0) NULL DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+2020-11-05 23:27:21.822  INFO 29424 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:27:21.824  INFO 29424 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:27:21.831  INFO 29424 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:27:21.839 ERROR 29424 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0) NULL DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at com.seven.myblog.MyblogApplication.main(MyblogApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0) NULL DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:370) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:54) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:284) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionTemplate.execute(TransactionTemplate.java:74) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:281) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:54) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:164) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:161) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:60) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.database.mysql.MySQLConnection.lock(MySQLConnection.java:147) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:155) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:161) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:139) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1395) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65) ~[spring-boot-autoconfigure-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 24 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0) NULL DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:253) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:202) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:125) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:77) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:367) ~[flyway-core-5.2.4.jar:na]
+	... 44 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.alibaba.druid.pool.DruidPooledStatement.execute(DruidPooledStatement.java:421) ~[druid-1.0.9.jar:1.0.9]
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:235) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.StandardSqlStatement.execute(StandardSqlStatement.java:42) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:189) ~[flyway-core-5.2.4.jar:na]
+	... 47 common frames omitted
+
+2020-11-05 23:31:08.743  INFO 38200 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 38200 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:31:08.745  INFO 38200 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:31:08.784  INFO 38200 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:31:08.785  INFO 38200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:31:08.785  INFO 38200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:31:09.116  WARN 38200 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:31:09.197  WARN 38200 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:31:09.677  INFO 38200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:31:09.683  INFO 38200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:31:09.683  INFO 38200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:31:09.767  INFO 38200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:31:09.768  INFO 38200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 982 ms
+2020-11-05 23:31:10.017  INFO 38200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:31:10.097  INFO 38200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:31:10.357  INFO 38200 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-11-05 23:31:10.496  INFO 38200 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3306/blog (MySQL 5.5)
+2020-11-05 23:31:10.558  WARN 38200 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 1.1 (create table user)
+2020-11-05 23:31:10.562  INFO 38200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:31:10.564  INFO 38200 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:31:10.572  INFO 38200 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:31:10.580 ERROR 38200 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 1.1 (create table user)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at com.seven.myblog.MyblogApplication.main(MyblogApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 1.1 (create table user)
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65) ~[spring-boot-autoconfigure-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 24 common frames omitted
+
+2020-11-05 23:31:41.838  INFO 36264 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 36264 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:31:41.840  INFO 36264 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:31:41.875  INFO 36264 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:31:41.875  INFO 36264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:31:41.876  INFO 36264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:31:42.161  WARN 36264 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:31:42.233  WARN 36264 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:31:42.688  INFO 36264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:31:42.694  INFO 36264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:31:42.694  INFO 36264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:31:42.763  INFO 36264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:31:42.763  INFO 36264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 887 ms
+2020-11-05 23:31:42.942  INFO 36264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:31:43.008  INFO 36264 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:31:43.233  INFO 36264 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-11-05 23:31:43.378  INFO 36264 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3306/blog (MySQL 5.5)
+2020-11-05 23:31:43.426  INFO 36264 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.013s)
+2020-11-05 23:31:43.529  INFO 36264 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: `blog`.`flyway_schema_history`
+2020-11-05 23:31:43.561  INFO 36264 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `blog`: << Empty Schema >>
+2020-11-05 23:31:43.562  INFO 36264 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `blog` to version 1.1 - create table user
+2020-11-05 23:31:43.564  WARN 36264 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4 (SQL State: 42000 - Error Code: 1064)
+2020-11-05 23:31:43.566 ERROR 36264 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migration of schema `blog` to version 1.1 - create table user failed! Please restore backups and roll back database and code!
+2020-11-05 23:31:43.571  WARN 36264 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0)  DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+2020-11-05 23:31:43.574  INFO 36264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:31:43.576  INFO 36264 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:31:43.583  INFO 36264 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:31:43.591 ERROR 36264 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0)  DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at com.seven.myblog.MyblogApplication.main(MyblogApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0)  DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:370) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:54) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:284) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionTemplate.execute(TransactionTemplate.java:74) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:281) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:246) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:54) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:164) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:161) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:60) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.database.mysql.MySQLConnection.lock(MySQLConnection.java:147) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:155) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:161) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:139) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1395) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65) ~[spring-boot-autoconfigure-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 24 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V1.1__create_table_user.sql failed
+--------------------------------------------
+SQL State  : 42000
+Error Code : 1064
+Message    : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+Location   : db/migration/V1.1__create_table_user.sql (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes\db\migration\V1.1__create_table_user.sql)
+Line       : 1
+Statement  : CREATE TABLE `user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `avatar` varchar(255)   DEFAULT NULL,
+  `create_time` datetime(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(255)  DEFAULT NULL,
+  `password` varchar(255)  DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `update_time` datetime(0)  DEFAULT NULL,
+  `username` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB  CHARACTER SET = utf8 
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:253) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:202) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:125) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:77) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:367) ~[flyway-core-5.2.4.jar:na]
+	... 44 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(0)  DEFAULT NULL,
+  `email` varchar(255)  DEFAULT NULL,
+  `nickname` varchar(' at line 4
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.alibaba.druid.pool.DruidPooledStatement.execute(DruidPooledStatement.java:421) ~[druid-1.0.9.jar:1.0.9]
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:235) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.StandardSqlStatement.execute(StandardSqlStatement.java:42) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:189) ~[flyway-core-5.2.4.jar:na]
+	... 47 common frames omitted
+
+2020-11-05 23:38:04.258  INFO 36312 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 36312 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
+2020-11-05 23:38:04.261  INFO 36312 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-05 23:38:04.313  INFO 36312 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
+2020-11-05 23:38:04.313  INFO 36312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-05 23:38:04.313  INFO 36312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-05 23:38:04.714  WARN 36312 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog.mapper]' package. Please check your configuration.
+2020-11-05 23:38:04.818  WARN 36312 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.seven.myblog]' package. Please check your configuration.
+2020-11-05 23:38:05.493  INFO 36312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-05 23:38:05.503  INFO 36312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-05 23:38:05.504  INFO 36312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-05 23:38:05.608  INFO 36312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-05 23:38:05.609  INFO 36312 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1295 ms
+2020-11-05 23:38:05.880  INFO 36312 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:38:05.982  INFO 36312 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-05 23:38:06.327  INFO 36312 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-11-05 23:38:06.542  INFO 36312 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3306/blog (MySQL 5.5)
+2020-11-05 23:38:06.631  WARN 36312 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 1.1 (create table user)
+2020-11-05 23:38:06.636  INFO 36312 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-05 23:38:06.638  INFO 36312 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-05 23:38:06.649  INFO 36312 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-05 23:38:06.660 ERROR 36312 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 1.1 (create table user)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at com.seven.myblog.MyblogApplication.main(MyblogApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed: Detected failed migration to version 1.1 (create table user)
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1482) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.access$100(Flyway.java:85) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1364) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1711) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65) ~[spring-boot-autoconfigure-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 24 common frames omitted
+

@@ -170,3 +170,8 @@ body {
         width: 100% !important;
     }
 }
+
+.nav-icon{
+    margin-right: 6px !important;
+    margin-bottom: 4px !important;
+}

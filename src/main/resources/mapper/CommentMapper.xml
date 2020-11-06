@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seven.myblog.mapper.CommentMapper">
+  <resultMap id="BaseResultMap" type="com.seven.myblog.model.Comment">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="blog_id" jdbcType="BIGINT" property="blogId" />
+    <result column="parent_comment_id" jdbcType="BIGINT" property="parentCommentId" />
+    <result column="admin_comment" jdbcType="BIT" property="adminComment" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment
+  </sql>
+  <select id="selectByExample" parameterType="com.seven.myblog.model.CommentExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from comment
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from comment
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from comment
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.seven.myblog.model.CommentExample">
+    delete from comment
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.seven.myblog.model.Comment">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into comment (nickname, email, content, 
+      avatar, create_time, blog_id, 
+      parent_comment_id, admin_comment)
+    values (#{nickname,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
+      #{avatar,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{blogId,jdbcType=BIGINT}, 
+      #{parentCommentId,jdbcType=BIGINT}, #{adminComment,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.seven.myblog.model.Comment">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into comment
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="nickname != null">
+        nickname,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="avatar != null">
+        avatar,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="blogId != null">
+        blog_id,
+      </if>
+      <if test="parentCommentId != null">
+        parent_comment_id,
+      </if>
+      <if test="adminComment != null">
+        admin_comment,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="nickname != null">
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="avatar != null">
+        #{avatar,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="blogId != null">
+        #{blogId,jdbcType=BIGINT},
+      </if>
+      <if test="parentCommentId != null">
+        #{parentCommentId,jdbcType=BIGINT},
+      </if>
+      <if test="adminComment != null">
+        #{adminComment,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.seven.myblog.model.CommentExample" resultType="java.lang.Long">
+    select count(*) from comment
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update comment
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.nickname != null">
+        nickname = #{record.nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.email != null">
+        email = #{record.email,jdbcType=VARCHAR},
+      </if>
+      <if test="record.content != null">
+        content = #{record.content,jdbcType=VARCHAR},
+      </if>
+      <if test="record.avatar != null">
+        avatar = #{record.avatar,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.blogId != null">
+        blog_id = #{record.blogId,jdbcType=BIGINT},
+      </if>
+      <if test="record.parentCommentId != null">
+        parent_comment_id = #{record.parentCommentId,jdbcType=BIGINT},
+      </if>
+      <if test="record.adminComment != null">
+        admin_comment = #{record.adminComment,jdbcType=BIT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update comment
+    set id = #{record.id,jdbcType=BIGINT},
+      nickname = #{record.nickname,jdbcType=VARCHAR},
+      email = #{record.email,jdbcType=VARCHAR},
+      content = #{record.content,jdbcType=VARCHAR},
+      avatar = #{record.avatar,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      blog_id = #{record.blogId,jdbcType=BIGINT},
+      parent_comment_id = #{record.parentCommentId,jdbcType=BIGINT},
+      admin_comment = #{record.adminComment,jdbcType=BIT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.seven.myblog.model.Comment">
+    update comment
+    <set>
+      <if test="nickname != null">
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="avatar != null">
+        avatar = #{avatar,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="blogId != null">
+        blog_id = #{blogId,jdbcType=BIGINT},
+      </if>
+      <if test="parentCommentId != null">
+        parent_comment_id = #{parentCommentId,jdbcType=BIGINT},
+      </if>
+      <if test="adminComment != null">
+        admin_comment = #{adminComment,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.seven.myblog.model.Comment">
+    update comment
+    set nickname = #{nickname,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      avatar = #{avatar,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      blog_id = #{blogId,jdbcType=BIGINT},
+      parent_comment_id = #{parentCommentId,jdbcType=BIGINT},
+      admin_comment = #{adminComment,jdbcType=BIT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
