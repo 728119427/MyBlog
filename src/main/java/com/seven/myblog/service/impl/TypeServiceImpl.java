@@ -1,6 +1,9 @@
 package com.seven.myblog.service.impl;
 
+import com.seven.myblog.dto.TypeDTO;
+import com.seven.myblog.mapper.BlogMapper;
 import com.seven.myblog.mapper.TypeMapper;
+import com.seven.myblog.model.BlogExample;
 import com.seven.myblog.model.Tag;
 import com.seven.myblog.model.Type;
 import com.seven.myblog.model.TypeExample;
@@ -9,12 +12,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 @Service
 public class TypeServiceImpl implements TypeService {
     @Autowired
     private TypeMapper typeMapper;
+    @Autowired
+    private BlogMapper blogMapper;
 
 
     @Override
@@ -69,5 +76,22 @@ public class TypeServiceImpl implements TypeService {
             throw new IllegalArgumentException("该分类下有博客，请先删除博客！");
         }
         return i;
+    }
+
+    @Override
+    public List<TypeDTO> getTopType() {
+        TreeSet<TypeDTO> typeDTOS = new TreeSet<>();
+        List<Type> types = typeMapper.selectByExample(new TypeExample());
+        for (Type type : types) {
+            BlogExample blogExample = new BlogExample();
+            blogExample.createCriteria().andTypeIdEqualTo(type.getId());
+            //获取每一个类型的blog数量
+            Integer typeCounts = (int)blogMapper.countByExample(blogExample);
+            TypeDTO typeDTO = new TypeDTO(type.getId(),type.getName(), typeCounts);
+            typeDTOS.add(typeDTO);
+        }
+        List<TypeDTO> list = new ArrayList<>();
+        list.addAll(typeDTOS);
+        return list;
     }
 }

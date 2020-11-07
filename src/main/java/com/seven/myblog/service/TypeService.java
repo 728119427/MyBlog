@@ -1,5 +1,6 @@
 package com.seven.myblog.service;
 
+import com.seven.myblog.dto.TypeDTO;
 import com.seven.myblog.model.Type;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -38,4 +39,10 @@ public interface TypeService {
      * @param id
      */
     int deleteType(Long id);
+
+    /**
+     * 获取博客最多的类型
+     * @return
+     */
+    List<TypeDTO> getTopType();
 }

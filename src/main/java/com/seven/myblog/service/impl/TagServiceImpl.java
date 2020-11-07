@@ -1,8 +1,10 @@
 package com.seven.myblog.service.impl;
 
+import com.seven.myblog.dto.TagDTO;
+import com.seven.myblog.dto.TagDTO;
+import com.seven.myblog.mapper.BlogExtMapper;
 import com.seven.myblog.mapper.TagMapper;
-import com.seven.myblog.model.Tag;
-import com.seven.myblog.model.TagExample;
+import com.seven.myblog.model.*;
 import com.seven.myblog.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,11 +12,14 @@ import org.springframework.util.ObjectUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 @Service
 public class TagServiceImpl implements TagService {
     @Autowired
     private TagMapper tagMapper;
+    @Autowired
+    private BlogExtMapper blogExtMapper;
 
     @Override
     public Tag getTag(Long id) {
@@ -86,5 +91,23 @@ public class TagServiceImpl implements TagService {
         tagExample.createCriteria().andIdIn(tagIds);
         List<Tag> tags = tagMapper.selectByExample(tagExample);
         return tags;
+    }
+
+    @Override
+    public List<TagDTO> getTopTag() {
+
+        TreeSet<TagDTO> tagDTOS = new TreeSet<>();
+        List<Tag> tags = tagMapper.selectByExample(new TagExample());
+        for (Tag tag : tags) {
+          
+            //获取每一个类型的blog数量
+            Integer tagCounts = blogExtMapper.countByTagId(tag.getId());
+            TagDTO tagDTO = new TagDTO(tag.getId(),tag.getName(), tagCounts);
+            tagDTOS.add(tagDTO);
+        }
+        List<TagDTO> list = new ArrayList<>();
+        list.addAll(tagDTOS);
+        return list;
+        
     }
 }

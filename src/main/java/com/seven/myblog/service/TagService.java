@@ -1,5 +1,6 @@
 package com.seven.myblog.service;
 
+import com.seven.myblog.dto.TagDTO;
 import com.seven.myblog.model.Tag;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,6 +46,13 @@ public interface TagService {
      * @return
      */
      List<Tag> listByTagIds(String ids);
+
+
+    /**
+     * 获取博客最多的标签
+     * @return
+     */
+    List<TagDTO> getTopTag();
 
 
 }

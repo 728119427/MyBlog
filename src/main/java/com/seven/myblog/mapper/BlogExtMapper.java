@@ -52,4 +52,11 @@ public interface BlogExtMapper {
      * @param blogDTO
      */
     void delete_some_BlogTag(BlogDTO blogDTO);
+
+    /**
+     * 在blog_tag根据tagId统计对应的blog数量
+     * @param tagId
+     * @return
+     */
+    Integer countByTagId(Long tagId);
 }

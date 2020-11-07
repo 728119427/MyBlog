@@ -4,6 +4,7 @@ import com.seven.myblog.dto.BlogDTO;
 import com.seven.myblog.mapper.BlogExtMapper;
 import com.seven.myblog.mapper.BlogMapper;
 import com.seven.myblog.model.Blog;
+import com.seven.myblog.model.BlogExample;
 import com.seven.myblog.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,10 @@ public class BlogServiceImpl implements BlogService {
         return blogMapper.selectByPrimaryKey(id);
     }
 
+    /**
+     * 插入blog同时插入blog_tag
+     * @param blog
+     */
     @Override
     public void insertBlog(Blog blog) {
         String tagIds = blog.getTagIds();
@@ -46,7 +51,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     /**
-     * 匠strIds转换为List
+     * 将strIds转换为List
      * @param ids
      * @return
      */
@@ -61,6 +66,10 @@ public class BlogServiceImpl implements BlogService {
         return list;
     }
 
+    /**
+     * 更新blog同时更新blog_tag
+     * @param blog
+     */
     @Override
     public void updateBlog(Blog blog) {
         Blog byPrimaryKey = blogMapper.selectByPrimaryKey(blog.getId());
@@ -113,30 +122,73 @@ public class BlogServiceImpl implements BlogService {
     }
 
 
+    /**
+     * 删除blog
+     * @param id
+     * @return
+     */
     @Override
     public int deleteBlog(Long id) {
         Blog byPrimaryKey = blogMapper.selectByPrimaryKey(id);
-        if(ObjectUtils.isEmpty(byPrimaryKey)){
+        if (ObjectUtils.isEmpty(byPrimaryKey)) {
             throw new IllegalArgumentException("该博客不存在或已删除！");
-        }else {
-            return blogMapper.deleteByPrimaryKey(id);
         }
+        int res = blogMapper.deleteByPrimaryKey(id);
+        if (res == 1) {
+            //还要把blog_tag中的标签删除了
+            blogExtMapper.deleteBlogTag(id);
+        }
+
+        return res;
 
     }
 
+    /**
+     * 查询关联的blog在后台blogs页面
+     * @return
+     */
     @Override
     public List<Blog> listUnion() {
         return blogExtMapper.listUnion();
     }
 
+    /**
+     * 根据搜素条件查询关联的blog在后台blogs页面
+     * @param blogDTO
+     * @return
+     */
     @Override
     public List<Blog> listUnion_search(BlogDTO blogDTO) {
         return blogExtMapper.listUnion_search(blogDTO);
     }
 
+    /**
+     * 根据id获取全关联的blog
+     * @param id
+     * @return
+     */
     @Override
     public Blog getUnionBlogById(Long id) {
-        //注意这里可能根据id查不到东西，要抛出异常！！！！！！！！
          return blogExtMapper.getUnionBlogById(id);
+    }
+
+    /**
+     * 获取index推荐的blog
+     * @return
+     */
+    @Override
+    public List<Blog> recommendBlogs() {
+        BlogExample blogExample = new BlogExample();
+        blogExample.setOrderByClause("views DESC,update_time DESC");
+        return blogMapper.selectByExample(blogExample);
+    }
+
+    /**
+     * 查询总的博客数量
+     * @return
+     */
+    @Override
+    public Integer blogCounts() {
+        return (int) blogMapper.countByExample(new BlogExample());
     }
 }

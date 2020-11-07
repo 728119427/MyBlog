@@ -41,6 +41,8 @@ public interface BlogService {
      */
     int deleteBlog(Long id);
 
+
+
     /**
      * 关联查询所有blog
      * @return
@@ -53,4 +55,16 @@ public interface BlogService {
      * @return
      */
     List<Blog> listUnion_search(BlogDTO blogDTO);
+
+    /**
+     * 查询推荐的blogs
+     * @return
+     */
+    List<Blog> recommendBlogs();
+
+    /**
+     * 查询总的博客数量
+     * @return
+     */
+    Integer blogCounts();
 }

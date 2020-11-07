@@ -20,7 +20,13 @@
     <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="comment_count" jdbcType="INTEGER" property="commentCount" />
     <association property="type" column="type_id" resultMap="typeResultMap"></association>
+    <association property="user" column="user_id" resultMap="userResultMap"></association>
     <collection property="tags" resultMap="TagResultMap"></collection>
+  </resultMap>
+
+  <resultMap id="userResultMap" type="com.seven.myblog.model.User">
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
   </resultMap>
 
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.seven.myblog.model.Blog">
@@ -39,7 +45,10 @@
 
   <!--查询blogs页面显示的blog-->
   <select id="listUnion" resultMap="BaseResultMap">
-    SELECT b.*,t.name FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id
+    SELECT b.*,t.name,u.avatar,u.nickname
+    FROM `blog` b
+    LEFT OUTER JOIN `type` t ON b.type_id=t.id
+    LEFT OUTER JOIN `user` u ON b.user_id=u.id
   </select>
 
   <!--根据搜索条件拆查询关联的blog-->
@@ -90,4 +99,8 @@
   <delete id="delete_some_BlogTag" parameterType="com.seven.myblog.dto.BlogDTO">
     DELETE FROM blog_tag WHERE blog_id=#{blogId} AND tag_id=#{tagId}
   </delete>
+  <!--在blog_tag根据tagId统计对应的blog数量-->
+  <select id="countByTagId" parameterType="long" resultType="int">
+    SELECT COUNT(*) FROM blog_tag WHERE tag_id = #{tagId}
+  </select>
 </mapper>
