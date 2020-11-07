@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -64,5 +65,26 @@ public class TagServiceImpl implements TagService {
         int i = tagMapper.deleteByPrimaryKey(id);
         System.out.println("删除返回结果 i= "+i);
         return i;
+    }
+
+
+    private List<Long> convertToList(String ids) {
+        List<Long> list = new ArrayList<>();
+        if (!"".equals(ids) && ids != null) {
+            String[] idarray = ids.split(",");
+            for (int i=0; i < idarray.length;i++) {
+                list.add(new Long(idarray[i]));
+            }
+        }
+        return list;
+    }
+
+    @Override
+    public List<Tag> listByTagIds(String ids) {
+        List<Long> tagIds = convertToList(ids);
+        TagExample tagExample = new TagExample();
+        tagExample.createCriteria().andIdIn(tagIds);
+        List<Tag> tags = tagMapper.selectByExample(tagExample);
+        return tags;
     }
 }

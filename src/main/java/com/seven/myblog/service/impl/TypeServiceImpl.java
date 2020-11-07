@@ -65,7 +65,9 @@ public class TypeServiceImpl implements TypeService {
             throw new IllegalArgumentException("该分类不存在");
         }
         int i = typeMapper.deleteByPrimaryKey(id);
-        System.out.println("删除返回结果 i= "+i);
+        if(i<1){
+            throw new IllegalArgumentException("该分类下有博客，请先删除博客！");
+        }
         return i;
     }
 }

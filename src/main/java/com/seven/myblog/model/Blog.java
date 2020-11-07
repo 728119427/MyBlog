@@ -1,12 +1,15 @@
 package com.seven.myblog.model;
 
 import lombok.Data;
+import org.springframework.stereotype.Component;
+import org.springframework.util.ObjectUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Data
+@Component
 public class Blog {
     private Long id;
     private Boolean appreciation;
@@ -31,5 +34,29 @@ public class Blog {
     private User user;
     private List<Comment> comments = new ArrayList<>();
     private String tagIds;
+
+    public void init() {
+        this.tagIds = tagsToIds(this.getTags());
+    }
+
+
+    private String tagsToIds(List<Tag> tags) {
+        if (!ObjectUtils.isEmpty(tags)) {
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags) {
+                if (flag) {
+                    ids.append(",");
+                } else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        } else {
+            return tagIds;
+        }
+    }
+
 
 }
