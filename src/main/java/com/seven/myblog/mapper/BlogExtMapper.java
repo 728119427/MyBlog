@@ -59,4 +59,22 @@ public interface BlogExtMapper {
      * @return
      */
     Integer countByTagId(Long tagId);
+
+    /**
+     * 根据搜索条件查询总的博客数量
+     * @return
+     */
+    Integer blogCounts_search(BlogDTO blogDTO);
+
+    /**
+     * 更新查看数
+     * @param blogId
+     */
+    void incView(Long blogId);
+
+    /**
+     * 更新评论数
+     * @param blogId
+     */
+    void incCommentCount(Long blogId);
 }

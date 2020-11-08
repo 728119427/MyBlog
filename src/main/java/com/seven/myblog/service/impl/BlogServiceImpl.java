@@ -6,12 +6,15 @@ import com.seven.myblog.mapper.BlogMapper;
 import com.seven.myblog.model.Blog;
 import com.seven.myblog.model.BlogExample;
 import com.seven.myblog.service.BlogService;
+import com.seven.myblog.util.MarkdownUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -56,14 +59,19 @@ public class BlogServiceImpl implements BlogService {
      * @return
      */
     private List<Long> convertToList(String ids) {
-        List<Long> list = new ArrayList<>();
+     /*   List<Long> list = new ArrayList<>();
         if (!"".equals(ids) && ids != null) {
             String[] idarray = ids.split(",");
             for (int i=0; i < idarray.length;i++) {
                 list.add(new Long(idarray[i]));
             }
-        }
-        return list;
+        }*/
+     if(!StringUtils.isEmpty(ids)){
+         String[] split = ids.split(",");
+         List<Long> list = Arrays.stream(split).map(Long::valueOf).collect(Collectors.toList());
+         return list;
+     }
+       return new ArrayList<>();
     }
 
     /**
@@ -162,6 +170,22 @@ public class BlogServiceImpl implements BlogService {
         return blogExtMapper.listUnion_search(blogDTO);
     }
 
+    @Override
+    public Blog getAndConvert(Long id) {
+        //更新阅读数
+        blogExtMapper.incView(id);
+        Blog blog = getUnionBlogById(id);
+        if (blog == null) {
+            throw new IllegalArgumentException("该博客不存在");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog,b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return b;
+    }
+
+
     /**
      * 根据id获取全关联的blog
      * @param id
@@ -190,5 +214,14 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Integer blogCounts() {
         return (int) blogMapper.countByExample(new BlogExample());
+    }
+
+    /**
+     * 根据搜索条件查询总的博客数量
+     * @return
+     */
+    @Override
+    public Integer blogCounts_search(BlogDTO blogDTO) {
+        return blogExtMapper.blogCounts_search(blogDTO);
     }
 }

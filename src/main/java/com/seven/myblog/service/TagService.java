@@ -40,12 +40,6 @@ public interface TagService {
      */
     int deleteTag(Long id);
 
-    /**
-     * 根据ids查找tag
-     * @param ids
-     * @return
-     */
-     List<Tag> listByTagIds(String ids);
 
 
     /**

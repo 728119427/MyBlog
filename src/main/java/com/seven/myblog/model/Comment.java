@@ -1,12 +1,14 @@
 package com.seven.myblog.model;
 
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Data
+@Component
 public class Comment {
     private Long id;
     private String nickname;

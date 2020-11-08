@@ -7,6 +7,7 @@ import org.springframework.util.ObjectUtils;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Data
 @Component
@@ -41,7 +42,7 @@ public class Blog {
 
 
     private String tagsToIds(List<Tag> tags) {
-        if (!ObjectUtils.isEmpty(tags)) {
+      /*  if (!ObjectUtils.isEmpty(tags)) {
             StringBuffer ids = new StringBuffer();
             boolean flag = false;
             for (Tag tag : tags) {
@@ -55,7 +56,14 @@ public class Blog {
             return ids.toString();
         } else {
             return tagIds;
-        }
+        }*/
+      if(!ObjectUtils.isEmpty(tags)){
+          //要把long先转换为string才行
+          String strTagIds = tags.stream().map(s -> s.getId()).map(String::valueOf).collect(Collectors.joining(","));
+          return strTagIds;
+      }
+      return "";
+
     }
 
 

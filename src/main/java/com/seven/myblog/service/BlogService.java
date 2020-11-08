@@ -67,4 +67,17 @@ public interface BlogService {
      * @return
      */
     Integer blogCounts();
+
+    /**
+     * 根据搜索条件查询总的博客数量
+     * @return
+     */
+    Integer blogCounts_search(BlogDTO blogDTO);
+
+    /**
+     * 将文本转换为html
+     * @param id
+     * @return
+     */
+     Blog getAndConvert(Long id);
 }

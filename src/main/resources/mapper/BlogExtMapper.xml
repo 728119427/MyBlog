@@ -49,14 +49,18 @@
     FROM `blog` b
     LEFT OUTER JOIN `type` t ON b.type_id=t.id
     LEFT OUTER JOIN `user` u ON b.user_id=u.id
+    ORDER BY update_time DESC
   </select>
 
   <!--根据搜索条件拆查询关联的blog-->
   <select id="listUnion_search" parameterType="com.seven.myblog.dto.BlogDTO" resultMap="BaseResultMap">
-     SELECT b.*,t.name FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id
+     SELECT b.*,t.name,t.id ty_id,u.avatar,u.nickname
+     FROM `blog` b
+     LEFT OUTER JOIN `type` t ON b.type_id=t.id
+     LEFT OUTER JOIN `user` u ON b.user_id=u.id
      <where>
        <if test="title!=null and title !=''">
-         AND title like  #{title}
+         AND title REGEXP  #{title}
        </if>
        <if test="typeId!=null">
          AND `type_id`=#{typeId}
@@ -65,16 +69,28 @@
          AND recommend=#{recommend}
        </if>
      </where>
+        ORDER BY update_time DESC
+  </select>
+
+  <!--根据搜索条件查询博客数量index-->
+  <select id="blogCounts_search" parameterType="com.seven.myblog.dto.BlogDTO" resultType="int">
+    SELECT COUNT(*)   FROM `blog`
+    <where>
+      <if test="title!=null and title !=''">
+        AND title REGEXP  #{title}
+      </if>
+    </where>
   </select>
 
 
 <!--根据blogId查询关联的blog内容回显到编辑页面-->
   <select id="getUnionBlogById" resultMap="ResultMapWithBLOBs" resultType="int">
-    SELECT b.*,ty.name,ty.id ty_id,tg.name tag_name,tg.id tg_id
+    SELECT b.*,ty.name,ty.id ty_id,tg.name tag_name,tg.id tg_id,u.avatar,u.nickname
     FROM blog b
     LEFT OUTER JOIN `type` ty ON b.type_id=ty.id
     LEFT OUTER JOIN blog_tag bt ON b.id=bt.blog_id
     LEFT OUTER JOIN tag tg ON bt.tag_id=tg.id
+    LEFT OUTER JOIN `user` u ON b.user_id=u.id
     WHERE b.id=#{id}
 
   </select>
@@ -102,5 +118,15 @@
   <!--在blog_tag根据tagId统计对应的blog数量-->
   <select id="countByTagId" parameterType="long" resultType="int">
     SELECT COUNT(*) FROM blog_tag WHERE tag_id = #{tagId}
+  </select>
+
+<!--更新阅读数-->
+  <select id="incView" parameterType="long">
+    UPDATE blog SET views = views + 1 WHERE id=#{blogId}
+  </select>
+
+  <!--更新评论数-->
+  <select id="incCommentCount" parameterType="long">
+    UPDATE blog SET comment_count = comment_count + 1 WHERE id=#{blogId}
   </select>
 </mapper>
