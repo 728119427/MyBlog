@@ -1,4 +1,4 @@
-package com.seven.myblog.controller;
+package com.seven.myblog.controller.admin;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

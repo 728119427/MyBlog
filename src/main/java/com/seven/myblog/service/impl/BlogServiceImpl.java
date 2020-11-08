@@ -3,6 +3,7 @@ package com.seven.myblog.service.impl;
 import com.seven.myblog.dto.BlogDTO;
 import com.seven.myblog.mapper.BlogExtMapper;
 import com.seven.myblog.mapper.BlogMapper;
+import com.seven.myblog.mapper.TagExtMapper;
 import com.seven.myblog.model.Blog;
 import com.seven.myblog.model.BlogExample;
 import com.seven.myblog.service.BlogService;
@@ -13,9 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -24,6 +23,8 @@ public class BlogServiceImpl implements BlogService {
     private BlogMapper blogMapper;
     @Autowired
     private BlogExtMapper blogExtMapper;
+    @Autowired
+    private TagExtMapper tagExtMapper;
 
     @Override
     public Blog getBlog(Long id) {
@@ -201,8 +202,9 @@ public class BlogServiceImpl implements BlogService {
      * @return
      */
     @Override
-    public List<Blog> recommendBlogs() {
+    public List<Blog> recommendBlogs(Integer size) {
         BlogExample blogExample = new BlogExample();
+        blogExample.setLimit(size);
         blogExample.setOrderByClause("views DESC,update_time DESC");
         return blogMapper.selectByExample(blogExample);
     }
@@ -223,5 +225,56 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Integer blogCounts_search(BlogDTO blogDTO) {
         return blogExtMapper.blogCounts_search(blogDTO);
+    }
+
+    /**
+     * 根据前端typeId查询分类页面显示的blog
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Blog> listUnionByTypeId(Long id) {
+        return blogExtMapper.listUnionByTypeId(id);
+    }
+
+    /**
+     * 根据前端tagId查询分类页面显示的blog
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Blog> listUnionByTagId(Long id) {
+        //根据tagId查找到对应的所有blog
+        List<Blog> blogs = blogExtMapper.listUnionByTagId(id);
+        //给所有blog查找对应的所有tag
+        for (Blog blog : blogs) {
+            blog.setTags(tagExtMapper.listTagByBlogId(blog.getId()));
+        }
+        return blogs;
+    }
+
+    /**
+     * 归档
+     * @return
+     */
+    @Override
+    public Map<String, List<Blog>> archiveMap() {
+        List<String> listYear = blogExtMapper.listYear();
+        Map<String,List<Blog>> archiveMap = new LinkedHashMap<>();
+        for (String year : listYear) {
+            archiveMap.put(year,blogExtMapper.listByYear(year));
+        }
+//        Map<String, List<Blog>> map = listYear.stream().collect(Collectors.toMap(year -> year, year -> blogExtMapper.listByYear(year)));
+        return archiveMap;
+
+    }
+
+    /**
+     * 查询博客总数
+     * @return
+     */
+    @Override
+    public Long countBlog() {
+        return blogMapper.countByExample(new BlogExample());
     }
 }

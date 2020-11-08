@@ -10,6 +10,7 @@ import com.seven.myblog.model.Type;
 import com.seven.myblog.service.BlogService;
 import com.seven.myblog.service.TagService;
 import com.seven.myblog.service.TypeService;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -43,7 +44,7 @@ public class IndexController {
         model.addAttribute("pageInfo",pageInfo);
         List<TypeDTO> types = typeService.getTopType();
         List<TagDTO> tags = tagService.getTopTag();
-        List<Blog> recommendBlogs = blogService.recommendBlogs();
+        List<Blog> recommendBlogs = blogService.recommendBlogs(10);
         model.addAttribute("recommendBlogs",recommendBlogs);
         model.addAttribute("types",types);
         model.addAttribute("tags",tags);
@@ -78,6 +79,19 @@ public class IndexController {
         Blog blog = blogService.getAndConvert(id);
         model.addAttribute("blog",blog);
         return "blog";
+    }
+
+    @GetMapping("/footer/newblog")
+    public String newBlog(Model model){
+        List<Blog> newblogs = blogService.recommendBlogs(3);
+        model.addAttribute("newblogs",newblogs);
+        return "_fragments::newblogList";
+
+    }
+
+    @GetMapping("/about")
+    public String about(){
+        return "about";
     }
 
 }

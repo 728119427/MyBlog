@@ -52,6 +52,28 @@
     ORDER BY update_time DESC
   </select>
 
+  <!--根据前端typeId查询分类页面显示的blog-->
+  <select id="listUnionByTypeId" resultMap="BaseResultMap" parameterType="long">
+    SELECT b.*,t.name,u.avatar,u.nickname
+    FROM `blog` b
+    LEFT OUTER JOIN `type` t ON b.type_id=t.id
+    LEFT OUTER JOIN `user` u ON b.user_id=u.id
+    WHERE type_id = #{id}
+    ORDER BY update_time DESC
+  </select>
+
+  <!--根据前端tagId查询分类页面显示的blog-->
+  <select id="listUnionByTagId" resultMap="BaseResultMap" resultType="long">
+    SELECT b.*,ty.name,ty.id ty_id,u.avatar,u.nickname
+    FROM blog b
+    LEFT OUTER JOIN `type` ty ON b.type_id=ty.id
+    LEFT OUTER JOIN blog_tag bt ON b.id=bt.blog_id
+    LEFT OUTER JOIN tag tg ON bt.tag_id=tg.id
+    LEFT OUTER JOIN `user` u ON b.user_id=u.id
+    WHERE tg.id=#{id}
+
+  </select>
+
   <!--根据搜索条件拆查询关联的blog-->
   <select id="listUnion_search" parameterType="com.seven.myblog.dto.BlogDTO" resultMap="BaseResultMap">
      SELECT b.*,t.name,t.id ty_id,u.avatar,u.nickname
@@ -128,5 +150,15 @@
   <!--更新评论数-->
   <select id="incCommentCount" parameterType="long">
     UPDATE blog SET comment_count = comment_count + 1 WHERE id=#{blogId}
+  </select>
+
+  <!--========================归档=========================-->
+  <!--查询所有年份-->
+  <select id="listYear" resultType="String">
+    SELECT  DATE_FORMAT(create_time,'%Y') AS `year` FROM  blog GROUP BY `year` ORDER BY `year` DESC
+  </select>
+  <!--查询所有年份对应的blogs-->
+  <select id="listByYear" parameterType="String" resultType="Blog">
+    SELECT * FROM blog WHERE DATE_FORMAT(create_time,'%Y')  = #{year} ORDER BY update_time DESC
   </select>
 </mapper>

@@ -77,4 +77,31 @@ public interface BlogExtMapper {
      * @param blogId
      */
     void incCommentCount(Long blogId);
+
+    /**
+     * 根据前端typeId查询分类页面显示的blog
+     * @param id
+     * @return
+     */
+    List<Blog> listUnionByTypeId(Long id);
+
+    /**
+     * 根据前端tagId查询分类页面显示的blog
+     * @param id
+     * @return
+     */
+    List<Blog> listUnionByTagId(Long id);
+
+    /**
+     * 查询blog表中所有blog所属的年份有哪些
+     * @return
+     */
+    List<String> listYear();
+
+    /**
+     * 根据年份查找对应的blog
+     * @param year
+     * @return
+     */
+    List<Blog> listByYear(String year);
 }

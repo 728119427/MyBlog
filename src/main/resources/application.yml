@@ -21,6 +21,9 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+    #指定信息配置文件的位置
+  messages:
+    basename: i18n/message
 
 #日志配置
 logging:
@@ -46,4 +49,3 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
-

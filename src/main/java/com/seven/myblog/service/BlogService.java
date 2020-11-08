@@ -5,9 +5,16 @@ import com.seven.myblog.model.Blog;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 @Transactional
 public interface BlogService {
+
+    /**
+     * 查询博客总数
+     * @return
+     */
+    Long countBlog();
 
     /**
      * 根据id查询blog
@@ -60,7 +67,7 @@ public interface BlogService {
      * 查询推荐的blogs
      * @return
      */
-    List<Blog> recommendBlogs();
+    List<Blog> recommendBlogs(Integer size);
 
     /**
      * 查询总的博客数量
@@ -80,4 +87,24 @@ public interface BlogService {
      * @return
      */
      Blog getAndConvert(Long id);
+
+    /**
+     * 根据前端typeId查询分类页面显示的blog
+     * @param id
+     * @return
+     */
+    List<Blog> listUnionByTypeId(Long id);
+
+    /**
+     * 根据前端tagId查询分类页面显示的blog
+     * @param id
+     * @return
+     */
+    List<Blog> listUnionByTagId(Long id);
+
+    /**
+     * 获取归档数据
+     * @return
+     */
+    Map<String,List<Blog>> archiveMap();
 }

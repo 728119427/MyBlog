@@ -91,4 +91,9 @@ public class TagServiceImpl implements TagService {
         return list;
         
     }
+
+    @Override
+    public List<Blog> listUnionByTagId(Long id) {
+        return blogExtMapper.listUnionByTagId(id);
+    }
 }

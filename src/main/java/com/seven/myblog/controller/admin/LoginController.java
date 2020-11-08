@@ -1,4 +1,4 @@
-package com.seven.myblog.controller;
+package com.seven.myblog.controller.admin;
 
 import com.seven.myblog.model.User;
 import com.seven.myblog.service.UserService;
