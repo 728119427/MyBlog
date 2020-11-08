@@ -2,6 +2,7 @@ package com.seven.myblog.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.seven.myblog.cache.IndexCache;
 import com.seven.myblog.dto.TagDTO;
 import com.seven.myblog.dto.TypeDTO;
 import com.seven.myblog.model.Blog;
@@ -23,13 +24,15 @@ public class TagShowController {
     private TagService tagService;
     @Autowired
     private BlogService blogService;
+    @Autowired
+    private IndexCache indexCache;
 
     @GetMapping("/tags/{id}")
     public String showType(@RequestParam(name = "page",defaultValue = "1") Integer page,
                            @RequestParam(name = "size",defaultValue = "5") Integer size,
                            @PathVariable("id") Long id, Model model)
     {
-        List<TagDTO> tags = tagService.getTopTag();
+        List<TagDTO> tags = indexCache.getTags();
         model.addAttribute("tags",tags);
         if(id==-1l && tags.size()>0){
             id=tags.get(0).getId();

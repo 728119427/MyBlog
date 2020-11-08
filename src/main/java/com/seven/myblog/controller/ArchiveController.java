@@ -1,5 +1,6 @@
 package com.seven.myblog.controller;
 
+import com.seven.myblog.cache.IndexCache;
 import com.seven.myblog.model.Blog;
 import com.seven.myblog.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +14,14 @@ import java.util.Map;
 @Controller
 public class ArchiveController {
     @Autowired
+    private IndexCache indexCache;
+    @Autowired
     private BlogService blogService;
+
 
     @GetMapping("/archives")
     public String archive(Model model){
-        Map<String, List<Blog>> archiveMap = blogService.archiveMap();
+        Map<String, List<Blog>> archiveMap = indexCache.getArchiveMap();
         model.addAttribute("archiveMap",archiveMap);
         model.addAttribute("blogCount",blogService.countBlog());
         return "archives";

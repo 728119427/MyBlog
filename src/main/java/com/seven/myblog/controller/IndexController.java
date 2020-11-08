@@ -2,6 +2,7 @@ package com.seven.myblog.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.seven.myblog.cache.IndexCache;
 import com.seven.myblog.dto.BlogDTO;
 import com.seven.myblog.dto.TagDTO;
 import com.seven.myblog.dto.TypeDTO;
@@ -32,6 +33,8 @@ public class IndexController {
     private TypeService typeService;
     @Autowired
     private TagService tagService;
+    @Autowired
+    private IndexCache indexCache;
 
     @GetMapping("/")
     public String blogs(@RequestParam(name = "page",defaultValue = "1") Integer page,
@@ -42,9 +45,9 @@ public class IndexController {
         List<Blog> blogList = blogService.listUnion();
         PageInfo<Blog> pageInfo = new PageInfo<>(blogList, 5);
         model.addAttribute("pageInfo",pageInfo);
-        List<TypeDTO> types = typeService.getTopType();
-        List<TagDTO> tags = tagService.getTopTag();
-        List<Blog> recommendBlogs = blogService.recommendBlogs(10);
+        List<TypeDTO> types = indexCache.getTypes();
+        List<TagDTO> tags = indexCache.getTags();
+        List<Blog> recommendBlogs = indexCache.getRecommendBlogs();
         model.addAttribute("recommendBlogs",recommendBlogs);
         model.addAttribute("types",types);
         model.addAttribute("tags",tags);
@@ -83,7 +86,7 @@ public class IndexController {
 
     @GetMapping("/footer/newblog")
     public String newBlog(Model model){
-        List<Blog> newblogs = blogService.recommendBlogs(3);
+        List<Blog> newblogs = indexCache.getRecommendBlogs().stream().limit(3).collect(Collectors.toList());
         model.addAttribute("newblogs",newblogs);
         return "_fragments::newblogList";
 

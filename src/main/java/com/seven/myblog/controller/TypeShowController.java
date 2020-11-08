@@ -2,6 +2,7 @@ package com.seven.myblog.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.seven.myblog.cache.IndexCache;
 import com.seven.myblog.dto.TypeDTO;
 import com.seven.myblog.mapper.BlogExtMapper;
 import com.seven.myblog.model.Blog;
@@ -23,13 +24,15 @@ public class TypeShowController {
     private TypeService typeService;
     @Autowired
     private BlogService blogService;
+    @Autowired
+    private IndexCache indexCache;
 
     @GetMapping("/types/{id}")
     public String showType(@RequestParam(name = "page",defaultValue = "1") Integer page,
                            @RequestParam(name = "size",defaultValue = "5") Integer size,
                            @PathVariable("id") Long id, Model model)
     {
-        List<TypeDTO> types = typeService.getTopType();
+        List<TypeDTO> types = indexCache.getTypes();
         model.addAttribute("types",types);
         if(id==-1l && types.size()>0){
             id=types.get(0).getId();
