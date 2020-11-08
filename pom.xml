@@ -18,6 +18,32 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <db.url>jdbc:mysql://localhost:3306/blog?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</db.url>
+                <db.user>root</db.user>
+                <db.password>root</db.password>
+                <db.driver>com.mysql.cj.jdbc.Driver</db.driver>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+                <db.url>jdbc:mysql://10.9.47.186:3306:3306/blog?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</db.url>
+                <db.user>root</db.user>
+                <db.password>3636136g</db.password>
+                <db.driver>com.mysql.cj.jdbc.Driver</db.driver>
+            </properties>
+
+        </profile>
+    </profiles>
+
 <!-- 依赖 -->
     <dependencies>
         <dependency>
@@ -161,10 +187,10 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.4</version>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/blog?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</url>
-                    <user>root</user>
-                    <password>root</password>
-                    <driver>com.mysql.cj.jdbc.Driver</driver>
+                    <url>${db.url}</url>
+                    <user>${db.user}</user>
+                    <password>${db.password}</password>
+                    <driver>${db.driver}</driver>
                 </configuration>
             </plugin>
 
