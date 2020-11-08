@@ -1,3 +1,6 @@
+#端口配置
+server:
+  port: 8090
 #数据源配置
 spring:
   datasource:
@@ -50,3 +53,4 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
+

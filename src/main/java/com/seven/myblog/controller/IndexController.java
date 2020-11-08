@@ -30,10 +30,6 @@ public class IndexController {
     @Autowired
     private BlogService blogService;
     @Autowired
-    private TypeService typeService;
-    @Autowired
-    private TagService tagService;
-    @Autowired
     private IndexCache indexCache;
 
     @GetMapping("/")
