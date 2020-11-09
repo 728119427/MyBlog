@@ -1,9 +1,19 @@
+<h1 align="center"><a href="https://github.com/728119427/MyBlog" target="_blank">MyBlog</a></h1>
+
+<br/>
+<br/>
+
 ## MyBlog个人博客(小巧简洁，适合新手)
 **声明：项目是学习B站视频所做，并非个人原创！后端代码做了较大的改动，原项目使用JPA,我个人使用的是Mybatis。**<br/>
+<br/>
 [视频地址](https://www.bilibili.com/video/BV1KJ411D7bW)
+
+<br>
 
 ## 在线演示地址
 [在线演示](http://117.50.63.69:8090)
+
+<br>
 
 ## 功能列表
 **前台**(游客可查看)：
@@ -23,6 +33,8 @@
 - **关于我**
     - 展示个人信息
 
+<br/>
+
 **后台**(博主管理员):
 
  - **登录**
@@ -34,6 +46,8 @@
     - 对分类进行增删改
  - **标签管理**
     - 对标签进行增删改
+
+<br>
     
 ## 开发环境及工具
 > - IntelliJ IDEA
@@ -42,6 +56,7 @@
 > - Maven
 > - Git
 
+<br>
 
 ## 技术栈 
 **前端**：
@@ -56,6 +71,8 @@
 > - Mysql
 > - flyway 
 
+<br>
+
 ## 集成插件    
 |   插件名称      |           链接地址                 |
 | :------:| :--------------------------:|
@@ -67,6 +84,7 @@
 |生成博客阅读二维码|https://davidshimjs.github.io/qrcodejs/
 |平滑滚动插件|https://github.com/flesler/jquery.scrollTo|
 
+<br>
 
 ## 数据库表展示
 **`项目使用了数据库管理工具flyway，运行项目后会自动生成表，但是需要先创建blog数据库`**
@@ -156,6 +174,18 @@ CREATE TABLE `blog_tag`  (
   PRIMARY KEY (`id`),
 )ENGINE = InnoDB  CHARACTER SET = utf8 ;
 ````
+
+<br>
+
+## 页面展示
+
+`给大家看看一位哥们自己修改的前端页面，原本博客的前端页面还是挺普通的，这里给大家提供这位哥们的美化版,感谢他的无私奉献！`
+
+[前端地址](https://github.com/oneStarLR/myblog-page)
+
+![博客展示](http://seven.cn-bj.ufileos.com/%E4%BB%96%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA.png?UCloudPublicKey=CEnvo7uzX5eCtplVo47O2X4VievOYUd30fyy5QXO3&Signature=yhuCqZ0489%2FHCtLvbL9JvdmO0eQ%3D&Expires=1604932711)
+
+<br/>
 
 ## 结语
 后续可能还会对该博客进行其他功能的开发,类似后台图片上传，个人资料修改等敬请期待！
