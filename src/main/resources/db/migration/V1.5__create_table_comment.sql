@@ -7,6 +7,6 @@ CREATE TABLE `comment`  (
   `create_time` datetime  DEFAULT NULL,
   `blog_id` bigint(20)  DEFAULT NULL,
   `parent_comment_id` bigint(20)  DEFAULT NULL,
-  `admin_comment` bit(1) NOT NULL,
+  `admin_comment` bit(1) NOT NULL DEFAULT false,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB  CHARACTER SET = utf8 ;
