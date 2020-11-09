@@ -35,7 +35,7 @@
         <profile>
             <id>prod</id>
             <properties>
-                <db.url>jdbc:mysql://10.9.47.186:3306:3306/blog?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</db.url>
+                <db.url>jdbc:mysql://10.9.28.196:3306/blog?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</db.url>
                 <db.user>root</db.user>
                 <db.password>3636136g</db.password>
                 <db.driver>com.mysql.cj.jdbc.Driver</db.driver>
