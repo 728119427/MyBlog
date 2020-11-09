@@ -183,7 +183,7 @@ CREATE TABLE `blog_tag`  (
 
 [前端地址](https://github.com/oneStarLR/myblog-page)
 
-![博客展示](http://117.50.63.69/upload/2020/11/%E5%8D%9A%E5%AE%A2%E5%B1%95%E7%A4%BA-436c1bf0bf1b47139714ab679c95b62c.png)
+![他人博客页面展示](http://117.50.63.69/upload/2020/11/%E4%BB%96%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA-b1c6cee0ff754a799d5b3f7a850fd85b.png)
 
 <br/>
 
