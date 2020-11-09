@@ -486,6 +486,615 @@
 2020-11-09 16:54:36.145  INFO 8324 --- [http-nio-8080-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
 2020-11-09 16:54:36.458  INFO 8324 --- [http-nio-8080-exec-5] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
 2020-11-09 16:54:36.458  INFO 8324 --- [http-nio-8080-exec-5] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+<<<<<<< HEAD
+2020-11-09 17:11:50.807  INFO 338300 --- [main] com.seven.myblog.MyblogApplication       : Starting MyblogApplication v0.0.1-SNAPSHOT on 10-9-117-58 with PID 338300 (/App/MyBlog/target/myblog-0.0.1-SNAPSHOT.jar started by root in /App/MyBlog)
+2020-11-09 17:11:50.810  INFO 338300 --- [main] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
+2020-11-09 17:11:54.791  INFO 338300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-09 17:11:54.817  INFO 338300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 17:11:54.817  INFO 338300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 17:11:54.977  INFO 338300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-09 17:11:54.977  INFO 338300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4026 ms
+2020-11-09 17:11:58.141  INFO 338300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:11:58.478  INFO 338300 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-09 17:11:59.024  INFO 338300 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-11-09 17:20:07.991  INFO 338501 --- [main] com.seven.myblog.MyblogApplication       : Starting MyblogApplication v0.0.1-SNAPSHOT on 10-9-117-58 with PID 338501 (/App/MyBlog/target/myblog-0.0.1-SNAPSHOT.jar started by root in /App/MyBlog)
+2020-11-09 17:20:07.994  INFO 338501 --- [main] com.seven.myblog.MyblogApplication       : The following profiles are active: prod
+2020-11-09 17:20:12.110  INFO 338501 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-11-09 17:20:12.136  INFO 338501 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 17:20:12.148  INFO 338501 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 17:20:12.294  INFO 338501 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-09 17:20:12.295  INFO 338501 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4128 ms
+2020-11-09 17:20:15.212  INFO 338501 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 17:20:15.502  INFO 338501 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-09 17:20:16.069  INFO 338501 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2020-11-09 17:20:16.841  INFO 338501 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://10.9.28.196:3306/blog (MySQL 5.7)
+2020-11-09 17:20:17.115  INFO 338501 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.121s)
+2020-11-09 17:20:17.212  INFO 338501 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `blog`: 2.4
+2020-11-09 17:20:17.214  INFO 338501 --- [main] o.f.core.internal.command.DbMigrate      : Schema `blog` is up to date. No migration necessary.
+2020-11-09 17:20:17.468  INFO 338501 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-11-09 17:20:17.742  INFO 338501 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-11-09 17:20:17.785  INFO 338501 --- [main] com.seven.myblog.MyblogApplication       : Started MyblogApplication in 10.965 seconds (JVM running for 12.153)
+2020-11-09 17:20:17.974 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type 
+2020-11-09 17:20:17.982 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:20:18.003 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 0
+2020-11-09 17:20:18.045 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag 
+2020-11-09 17:20:18.045 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 
+2020-11-09 17:20:18.049 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:20:18.090 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.BlogMapper.selectByExample  : ==>  Preparing: select id, appreciation, commentabled, create_time, description, first_picture, flag, published, recommend, share_statement, title, update_time, views, type_id, user_id, comment_count from blog order by views DESC,update_time DESC limit 10 
+2020-11-09 17:20:18.091 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.BlogMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:20:18.095 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.BlogMapper.selectByExample  : <==      Total: 0
+2020-11-09 17:20:18.129 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.BlogExtMapper.listYear      : ==>  Preparing: SELECT DATE_FORMAT(create_time,'%Y') AS `year` FROM blog GROUP BY `year` ORDER BY `year` DESC 
+2020-11-09 17:20:18.130 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.BlogExtMapper.listYear      : ==> Parameters: 
+2020-11-09 17:20:18.142 DEBUG 338501 --- [scheduling-1] c.s.m.mapper.BlogExtMapper.listYear      : <==      Total: 0
+2020-11-09 17:20:18.156  INFO 338501 --- [scheduling-1] com.seven.myblog.schedule.IndexSchedule  : TopTypes:  
+2020-11-09 17:20:18.158  INFO 338501 --- [scheduling-1] com.seven.myblog.schedule.IndexSchedule  : TopTags:  
+2020-11-09 17:20:18.159  INFO 338501 --- [scheduling-1] com.seven.myblog.schedule.IndexSchedule  : recommendBlogs:{} 
+2020-11-09 17:20:45.228  INFO 338501 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 17:20:45.228  INFO 338501 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 17:20:45.249  INFO 338501 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-11-09 17:20:45.340  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blogs', args=[1, 5, {}]}
+2020-11-09 17:20:45.442 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:20:45.443 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:20:45.457 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:20:45.493 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:20:45.494 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:20:45.496 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:20:45.518  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-09 17:20:47.715  INFO 338501 --- [http-nio-8090-exec-5] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:20:47.722  INFO 338501 --- [http-nio-8090-exec-5] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:22:55.795 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, avatar, create_time, email, nickname, password, " type", update_time, username from user WHERE ( username = ? and password = ? ) 
+2020-11-09 17:22:55.795 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.UserMapper.selectByExample  : ==> Parameters: zhangsan(String), 123(String)
+2020-11-09 17:22:55.802 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-11-09 17:23:05.586 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.selectByExample_COUNT          : ==>  Preparing: SELECT count(0) FROM type 
+2020-11-09 17:23:05.587 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.selectByExample_COUNT          : ==> Parameters: 
+2020-11-09 17:23:05.588 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.selectByExample_COUNT          : <==      Total: 1
+2020-11-09 17:23:10.821 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type WHERE ( name = ? ) 
+2020-11-09 17:23:10.822 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: Java(String)
+2020-11-09 17:23:10.826 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 0
+2020-11-09 17:23:10.828 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.insertSelective  : ==>  Preparing: insert into type ( name ) values ( ? ) 
+2020-11-09 17:23:10.829 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.insertSelective  : ==> Parameters: Java(String)
+2020-11-09 17:23:10.834 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:23:10.835 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:10.835 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:10.836 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:10.911 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.T.selectByExample_COUNT          : ==>  Preparing: SELECT count(0) FROM type 
+2020-11-09 17:23:10.912 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.T.selectByExample_COUNT          : ==> Parameters: 
+2020-11-09 17:23:10.925 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.T.selectByExample_COUNT          : <==      Total: 1
+2020-11-09 17:23:10.927 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC LIMIT ? 
+2020-11-09 17:23:10.928 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 5(Integer)
+2020-11-09 17:23:10.935 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 1
+2020-11-09 17:23:15.173 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type WHERE ( name = ? ) 
+2020-11-09 17:23:15.173 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 框架(String)
+2020-11-09 17:23:15.183 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 0
+2020-11-09 17:23:15.184 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.insertSelective  : ==>  Preparing: insert into type ( name ) values ( ? ) 
+2020-11-09 17:23:15.185 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.insertSelective  : ==> Parameters: 框架(String)
+2020-11-09 17:23:15.188 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:23:15.190 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:15.191 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:15.206 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:15.266 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.T.selectByExample_COUNT          : ==>  Preparing: SELECT count(0) FROM type 
+2020-11-09 17:23:15.266 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.T.selectByExample_COUNT          : ==> Parameters: 
+2020-11-09 17:23:15.272 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.T.selectByExample_COUNT          : <==      Total: 1
+2020-11-09 17:23:15.273 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC LIMIT ? 
+2020-11-09 17:23:15.274 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 5(Integer)
+2020-11-09 17:23:15.277 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 2
+2020-11-09 17:23:18.610 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type WHERE ( name = ? ) 
+2020-11-09 17:23:18.611 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 操作系统(String)
+2020-11-09 17:23:18.613 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 0
+2020-11-09 17:23:18.614 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.insertSelective  : ==>  Preparing: insert into type ( name ) values ( ? ) 
+2020-11-09 17:23:18.615 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.insertSelective  : ==> Parameters: 操作系统(String)
+2020-11-09 17:23:18.622 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:23:18.623 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:18.624 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:18.628 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:18.686 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.T.selectByExample_COUNT          : ==>  Preparing: SELECT count(0) FROM type 
+2020-11-09 17:23:18.687 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.T.selectByExample_COUNT          : ==> Parameters: 
+2020-11-09 17:23:18.691 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.T.selectByExample_COUNT          : <==      Total: 1
+2020-11-09 17:23:18.693 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC LIMIT ? 
+2020-11-09 17:23:18.693 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 5(Integer)
+2020-11-09 17:23:18.696 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 3
+2020-11-09 17:23:27.018 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type WHERE ( name = ? ) 
+2020-11-09 17:23:27.019 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 前端(String)
+2020-11-09 17:23:27.028 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 0
+2020-11-09 17:23:27.028 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TypeMapper.insertSelective  : ==>  Preparing: insert into type ( name ) values ( ? ) 
+2020-11-09 17:23:27.029 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TypeMapper.insertSelective  : ==> Parameters: 前端(String)
+2020-11-09 17:23:27.030 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TypeMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:23:27.031 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:27.031 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:27.032 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:27.087 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.T.selectByExample_COUNT          : ==>  Preparing: SELECT count(0) FROM type 
+2020-11-09 17:23:27.087 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.T.selectByExample_COUNT          : ==> Parameters: 
+2020-11-09 17:23:27.088 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.T.selectByExample_COUNT          : <==      Total: 1
+2020-11-09 17:23:27.089 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC LIMIT ? 
+2020-11-09 17:23:27.089 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 5(Integer)
+2020-11-09 17:23:27.091 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 4
+2020-11-09 17:23:32.408 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type WHERE ( name = ? ) 
+2020-11-09 17:23:32.409 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 后端(String)
+2020-11-09 17:23:32.411 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 0
+2020-11-09 17:23:32.412 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.insertSelective  : ==>  Preparing: insert into type ( name ) values ( ? ) 
+2020-11-09 17:23:32.412 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.insertSelective  : ==> Parameters: 后端(String)
+2020-11-09 17:23:32.421 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:23:32.422 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:32.422 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:32.424 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:32.476 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.T.selectByExample_COUNT          : ==>  Preparing: SELECT count(0) FROM type 
+2020-11-09 17:23:32.476 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.T.selectByExample_COUNT          : ==> Parameters: 
+2020-11-09 17:23:32.478 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.T.selectByExample_COUNT          : <==      Total: 1
+2020-11-09 17:23:32.479 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC LIMIT ? 
+2020-11-09 17:23:32.479 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 5(Integer)
+2020-11-09 17:23:32.481 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:23:37.982 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:23:37.983 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:23:37.988 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:23:42.896 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag WHERE ( name = ? ) 
+2020-11-09 17:23:42.896 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: Spring(String)
+2020-11-09 17:23:42.898 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:23:42.899 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.insertSelective   : ==>  Preparing: insert into tag ( name ) values ( ? ) 
+2020-11-09 17:23:42.899 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.insertSelective   : ==> Parameters: Spring(String)
+2020-11-09 17:23:42.902 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.insertSelective   : <==    Updates: 1
+2020-11-09 17:23:42.902 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:42.902 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:42.914 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:42.980 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:23:42.980 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:23:42.981 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:23:42.982 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:23:42.982 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:23:42.984 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 1
+2020-11-09 17:23:46.564 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag WHERE ( name = ? ) 
+2020-11-09 17:23:46.564 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: SpringBoot(String)
+2020-11-09 17:23:46.571 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:23:46.572 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.insertSelective   : ==>  Preparing: insert into tag ( name ) values ( ? ) 
+2020-11-09 17:23:46.573 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.insertSelective   : ==> Parameters: SpringBoot(String)
+2020-11-09 17:23:46.575 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.insertSelective   : <==    Updates: 1
+2020-11-09 17:23:46.575 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:46.575 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:46.577 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:46.636 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:23:46.637 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:23:46.645 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:23:46.646 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:23:46.646 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:23:46.647 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 2
+2020-11-09 17:23:50.003 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag WHERE ( name = ? ) 
+2020-11-09 17:23:50.003 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: SpringMVC(String)
+2020-11-09 17:23:50.010 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:23:50.011 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : ==>  Preparing: insert into tag ( name ) values ( ? ) 
+2020-11-09 17:23:50.011 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : ==> Parameters: SpringMVC(String)
+2020-11-09 17:23:50.014 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : <==    Updates: 1
+2020-11-09 17:23:50.015 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:50.015 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:50.016 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:50.073 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:23:50.073 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:23:50.075 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:23:50.075 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:23:50.076 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:23:50.078 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 3
+2020-11-09 17:23:54.067 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag WHERE ( name = ? ) 
+2020-11-09 17:23:54.068 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: Mybatis(String)
+2020-11-09 17:23:54.071 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:23:54.072 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TagMapper.insertSelective   : ==>  Preparing: insert into tag ( name ) values ( ? ) 
+2020-11-09 17:23:54.072 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TagMapper.insertSelective   : ==> Parameters: Mybatis(String)
+2020-11-09 17:23:54.075 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TagMapper.insertSelective   : <==    Updates: 1
+2020-11-09 17:23:54.076 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:54.076 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:54.079 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:54.133 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:23:54.134 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:23:54.141 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:23:54.142 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:23:54.142 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:23:54.155 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 4
+2020-11-09 17:23:58.509 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag WHERE ( name = ? ) 
+2020-11-09 17:23:58.509 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: Mysql(String)
+2020-11-09 17:23:58.515 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:23:58.516 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : ==>  Preparing: insert into tag ( name ) values ( ? ) 
+2020-11-09 17:23:58.517 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : ==> Parameters: Mysql(String)
+2020-11-09 17:23:58.523 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : <==    Updates: 1
+2020-11-09 17:23:58.524 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:23:58.524 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:23:58.528 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:23:58.588 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:23:58.589 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:23:58.591 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:23:58.593 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:23:58.593 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:23:58.597 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 5
+2020-11-09 17:24:18.910 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag WHERE ( name = ? ) 
+2020-11-09 17:24:18.911 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: redis(String)
+2020-11-09 17:24:18.914 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:24:18.916 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.insertSelective   : ==>  Preparing: insert into tag ( name ) values ( ? ) 
+2020-11-09 17:24:18.917 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.insertSelective   : ==> Parameters: redis(String)
+2020-11-09 17:24:18.931 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.insertSelective   : <==    Updates: 1
+2020-11-09 17:24:18.932 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:24:18.932 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:24:18.934 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:24:18.990 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:24:18.990 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:24:18.992 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:24:18.993 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:24:18.994 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:24:18.997 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 5
+2020-11-09 17:24:25.030 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:24:25.031 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:24:25.035 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:24:25.038 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:24:25.038 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:24:25.040 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:24:27.209 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:24:27.210 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:24:27.212 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:24:27.215 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC 
+2020-11-09 17:24:27.215 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 
+2020-11-09 17:24:27.217 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 6
+2020-11-09 17:26:28.286 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.insertSelective  : ==>  Preparing: insert into blog ( appreciation, commentabled, create_time, description, first_picture, flag, published, recommend, share_statement, title, update_time, views, type_id, user_id, comment_count, content ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-09 17:26:28.290 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.insertSelective  : ==> Parameters: true(Boolean), true(Boolean), 2020-11-09 17:26:28.28(Timestamp), 最近又找了个SpringBoot入门实战项目做，做起来还是挺简单的，还是个博客项目，做完后自己也能搭一个比较小巧的博客了，项目虽小，五脏俱全，还是能满足博客的基本需求的，这里就为大家详细介绍一下。(String), http://117.50.63.69/upload/2020/11/%E5%8D%9A%E5%AE%A2%E5%B1%95%E7%A4%BA-436c1bf0bf1b47139714ab679c95b62c.png(String), (String), true(Boolean), true(Boolean), true(Boolean), SpringBoot入门实战项目2--小而美的个人博客(String), 2020-11-09 17:26:28.28(Timestamp), 0(Integer), 1(Long), 1(Long), 0(Integer), java.io.StringReader@21edbdbe(StringReader)
+2020-11-09 17:26:28.307 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:26:28.308 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.B.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:26:28.309 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.B.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:26:28.310 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.B.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:26:28.311 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : ==>  Preparing: INSERT INTO blog_tag (blog_id,tag_id) VALUES (?,?) 
+2020-11-09 17:26:28.311 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : ==> Parameters: 1(Long), 2(Long)
+2020-11-09 17:26:28.315 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : <==    Updates: 1
+2020-11-09 17:26:28.315 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : ==>  Preparing: INSERT INTO blog_tag (blog_id,tag_id) VALUES (?,?) 
+2020-11-09 17:26:28.315 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : ==> Parameters: 1(Long), 4(Long)
+2020-11-09 17:26:28.316 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : <==    Updates: 1
+2020-11-09 17:26:28.371 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:26:28.371 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:26:28.375 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:26:28.375 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:26:28.376 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:26:28.382 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 1
+2020-11-09 17:26:28.388 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:26:28.388 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:26:28.392 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:27:08.452  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blogs', args=[1, 5, {}]}
+2020-11-09 17:27:08.458 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:27:08.458 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:27:08.462 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:27:08.463 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:27:08.464 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:27:08.469 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 1
+2020-11-09 17:27:08.474 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:27:08.475 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:27:08.481 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:27:08.484  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-09 17:27:09.562  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:27:09.563  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:27:13.320  INFO 338501 --- [http-nio-8090-exec-10] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/blog/1', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blog', args=[1, {}]}
+2020-11-09 17:27:13.323 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.myblog.mapper.BlogExtMapper.incView  : ==>  Preparing: UPDATE blog SET views = views + 1 WHERE id=? 
+2020-11-09 17:27:13.324 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.myblog.mapper.BlogExtMapper.incView  : ==> Parameters: 1(Long)
+2020-11-09 17:27:13.327 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==>  Preparing: SELECT b.*,ty.name,ty.id ty_id,tg.name tag_name,tg.id tg_id,u.avatar,u.nickname FROM blog b LEFT OUTER JOIN `type` ty ON b.type_id=ty.id LEFT OUTER JOIN blog_tag bt ON b.id=bt.blog_id LEFT OUTER JOIN tag tg ON bt.tag_id=tg.id LEFT OUTER JOIN `user` u ON b.user_id=u.id WHERE b.id=? 
+2020-11-09 17:27:13.327 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==> Parameters: 1(Long)
+2020-11-09 17:27:13.354 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogExtMapper.getUnionBlogById   : <==      Total: 2
+2020-11-09 17:27:13.530  INFO 338501 --- [http-nio-8090-exec-10] com.seven.myblog.aspect.LogAspect        : Return : blog
+2020-11-09 17:27:14.288  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:27:14.289  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:27:14.398  INFO 338501 --- [http-nio-8090-exec-8] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/comments/1', ip='119.123.123.29', classMethod='com.seven.myblog.controller.CommentController.list', args=[1, {}]}
+2020-11-09 17:27:14.425 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( blog_id = ? and parent_comment_id is null ) 
+2020-11-09 17:27:14.426 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 1(Long)
+2020-11-09 17:27:14.442 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 0
+2020-11-09 17:27:14.457  INFO 338501 --- [http-nio-8090-exec-8] com.seven.myblog.aspect.LogAspect        : Return : blog::commentList
+2020-11-09 17:39:47.692  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/comments', ip='119.123.123.29', classMethod='com.seven.myblog.controller.CommentController.saveComment', args=[Comment(id=null, nickname=yann, email=728119427@qq.com, content=哈哈，你好！, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=null, blog=Blog(id=1, appreciation=null, commentabled=null, createTime=null, description=null, firstPicture=null, flag=null, published=null, recommend=null, shareStatement=null, title=null, updateTime=null, views=null, typeId=null, userId=null, commentCount=null, content=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@39e92051]}
+2020-11-09 17:39:47.711 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.CommentMapper.insertSelective    : ==>  Preparing: insert into comment ( nickname, email, content, avatar, create_time, blog_id, admin_comment ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-09 17:39:47.712 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.CommentMapper.insertSelective    : ==> Parameters: yann(String), 728119427@qq.com(String), 哈哈，你好！(String), https://cdn.pixabay.com/photo/2018/09/19/23/03/sunset-3689760_1280.jpg(String), 2020-11-09 17:39:47.709(Timestamp), 1(Long), true(Boolean)
+2020-11-09 17:39:47.716 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.CommentMapper.insertSelective    : <==    Updates: 1
+2020-11-09 17:39:47.717 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.C.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:39:47.718 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.C.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:39:47.728 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.C.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:39:47.729 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.incCommentCount    : ==>  Preparing: UPDATE blog SET comment_count = comment_count + 1 WHERE id=? 
+2020-11-09 17:39:47.729 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.incCommentCount    : ==> Parameters: 1(Long)
+2020-11-09 17:39:47.735  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Return : redirect:/comments/1
+2020-11-09 17:39:47.786  INFO 338501 --- [http-nio-8090-exec-10] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/comments/1', ip='119.123.123.29', classMethod='com.seven.myblog.controller.CommentController.list', args=[1, {}]}
+2020-11-09 17:39:47.790 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( blog_id = ? and parent_comment_id is null ) 
+2020-11-09 17:39:47.791 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 1(Long)
+2020-11-09 17:39:47.799 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 1
+2020-11-09 17:39:47.801 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( parent_comment_id = ? ) 
+2020-11-09 17:39:47.801 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 1(Long)
+2020-11-09 17:39:47.808 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 0
+2020-11-09 17:39:47.821  INFO 338501 --- [http-nio-8090-exec-10] com.seven.myblog.aspect.LogAspect        : Return : blog::commentList
+2020-11-09 17:40:09.387  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/comments', ip='119.123.123.29', classMethod='com.seven.myblog.controller.CommentController.saveComment', args=[Comment(id=null, nickname=张三, email=728119427@qq.com, content=大家好, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=null, blog=Blog(id=1, appreciation=null, commentabled=null, createTime=null, description=null, firstPicture=null, flag=null, published=null, recommend=null, shareStatement=null, title=null, updateTime=null, views=null, typeId=null, userId=null, commentCount=null, content=null, type=null, tags=[], user=null, comments=[], tagIds=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blogId=null, parentCommentId=null, adminComment=null, blog=null, replyComments=[], parentComment=null)), org.apache.catalina.session.StandardSessionFacade@39e92051]}
+2020-11-09 17:40:09.391 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.CommentMapper.insertSelective    : ==>  Preparing: insert into comment ( nickname, email, content, avatar, create_time, blog_id ) values ( ?, ?, ?, ?, ?, ? ) 
+2020-11-09 17:40:09.391 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.CommentMapper.insertSelective    : ==> Parameters: 张三(String), 728119427@qq.com(String), 大家好(String), /images/avatar.png(String), 2020-11-09 17:40:09.389(Timestamp), 1(Long)
+2020-11-09 17:40:09.395 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.CommentMapper.insertSelective    : <==    Updates: 1
+2020-11-09 17:40:09.395 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.C.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:40:09.395 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.C.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:40:09.396 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.C.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:40:09.397 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.BlogExtMapper.incCommentCount    : ==>  Preparing: UPDATE blog SET comment_count = comment_count + 1 WHERE id=? 
+2020-11-09 17:40:09.397 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.BlogExtMapper.incCommentCount    : ==> Parameters: 1(Long)
+2020-11-09 17:40:09.402  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Return : redirect:/comments/1
+2020-11-09 17:40:09.447  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/comments/1', ip='119.123.123.29', classMethod='com.seven.myblog.controller.CommentController.list', args=[1, {}]}
+2020-11-09 17:40:09.449 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( blog_id = ? and parent_comment_id is null ) 
+2020-11-09 17:40:09.450 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 1(Long)
+2020-11-09 17:40:09.453 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 2
+2020-11-09 17:40:09.454 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( parent_comment_id = ? ) 
+2020-11-09 17:40:09.455 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 1(Long)
+2020-11-09 17:40:09.458 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 0
+2020-11-09 17:40:09.458 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( parent_comment_id = ? ) 
+2020-11-09 17:40:09.458 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 2(Long)
+2020-11-09 17:40:09.459 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 0
+2020-11-09 17:40:09.461  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Return : blog::commentList
+2020-11-09 17:40:42.604  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blogs', args=[1, 5, {}]}
+2020-11-09 17:40:42.609 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:40:42.610 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:40:42.615 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:40:42.616 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:40:42.617 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:40:42.620 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 1
+2020-11-09 17:40:42.628 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:40:42.628 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:40:42.629 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:40:42.635  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-09 17:40:43.682  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:40:43.682  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:41:07.342 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:41:07.342 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:41:07.348 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:41:07.351 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC 
+2020-11-09 17:41:07.351 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 
+2020-11-09 17:41:07.354 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 6
+2020-11-09 17:42:36.140 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.insertSelective  : ==>  Preparing: insert into blog ( appreciation, commentabled, create_time, description, first_picture, flag, published, recommend, share_statement, title, update_time, views, type_id, user_id, comment_count, content ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-09 17:42:36.142 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.insertSelective  : ==> Parameters: true(Boolean), true(Boolean), 2020-11-09 17:42:36.134(Timestamp), 最近自己做了个SpringBoot的入门让你实战项目，然后通过ssh连接到远程服务器把项目部署起来了，但是我发现关掉ssh连接之后，就访问不了自己的网站了，也就是说在关闭ssh连接之后,我之前在ssh连接之下启动的程序也被一起关闭了，这就很难受了，为了解决这个问题我特意查询了一番，发现了一个简单的解决方法！(String), http://117.50.63.69/upload/2020/11/openssh-82-novedades-11ec893f50804615bcd469d9562f0eb1.jpg(String), 原创(String), true(Boolean), true(Boolean), true(Boolean), ssh连接服务器中断，如何让命令继续在服务器执行(String), 2020-11-09 17:42:36.134(Timestamp), 0(Integer), 3(Long), 1(Long), 0(Integer), java.io.StringReader@5e4b2655(StringReader)
+2020-11-09 17:42:36.146 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:42:36.147 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.B.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:42:36.147 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.B.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:42:36.159 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.B.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:42:36.159 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : ==>  Preparing: INSERT INTO blog_tag (blog_id,tag_id) VALUES (?,?) 
+2020-11-09 17:42:36.160 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : ==> Parameters: 2(Long), 2(Long)
+2020-11-09 17:42:36.168 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.insertBlogTag      : <==    Updates: 1
+2020-11-09 17:42:36.225 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:42:36.226 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:42:36.227 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:42:36.228 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:42:36.228 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:42:36.235 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 2
+2020-11-09 17:42:36.240 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:42:36.240 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:42:36.241 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:42:38.657 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:42:38.657 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:42:38.658 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:42:38.659 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:42:38.659 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:42:38.663 DEBUG 338501 --- [http-nio-8090-exec-4] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 5
+2020-11-09 17:42:45.456 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag WHERE ( name = ? ) 
+2020-11-09 17:42:45.457 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: linux(String)
+2020-11-09 17:42:45.460 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 0
+2020-11-09 17:42:45.460 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : ==>  Preparing: insert into tag ( name ) values ( ? ) 
+2020-11-09 17:42:45.461 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : ==> Parameters: linux(String)
+2020-11-09 17:42:45.462 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.insertSelective   : <==    Updates: 1
+2020-11-09 17:42:45.463 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:42:45.463 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:42:45.464 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.T.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:42:45.515 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:42:45.515 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:42:45.521 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:42:45.522 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:42:45.522 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:42:45.524 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 5
+2020-11-09 17:42:48.788 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:42:48.788 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:42:48.790 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:42:48.791 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:42:48.791 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:42:48.797 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 2
+2020-11-09 17:42:48.802 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:42:48.803 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:42:48.806 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:42:50.471 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==>  Preparing: SELECT b.*,ty.name,ty.id ty_id,tg.name tag_name,tg.id tg_id,u.avatar,u.nickname FROM blog b LEFT OUTER JOIN `type` ty ON b.type_id=ty.id LEFT OUTER JOIN blog_tag bt ON b.id=bt.blog_id LEFT OUTER JOIN tag tg ON bt.tag_id=tg.id LEFT OUTER JOIN `user` u ON b.user_id=u.id WHERE b.id=? 
+2020-11-09 17:42:50.471 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==> Parameters: 2(Long)
+2020-11-09 17:42:50.475 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.getUnionBlogById   : <==      Total: 1
+2020-11-09 17:42:50.480 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:42:50.480 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:42:50.481 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:42:50.484 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC 
+2020-11-09 17:42:50.484 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 
+2020-11-09 17:42:50.486 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 7
+2020-11-09 17:43:05.752 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogMapper.selectByPrimaryKey    : ==>  Preparing: select id, appreciation, commentabled, create_time, description, first_picture, flag, published, recommend, share_statement, title, update_time, views, type_id, user_id, comment_count , content from blog where id = ? 
+2020-11-09 17:43:05.752 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogMapper.selectByPrimaryKey    : ==> Parameters: 2(Long)
+2020-11-09 17:43:05.755 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogMapper.selectByPrimaryKey    : <==      Total: 1
+2020-11-09 17:43:05.756 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.B.updateByPrimaryKeySelective    : ==>  Preparing: update blog SET appreciation = ?, commentabled = ?, description = ?, first_picture = ?, flag = ?, published = ?, recommend = ?, share_statement = ?, title = ?, update_time = ?, type_id = ?, content = ? where id = ? 
+2020-11-09 17:43:05.757 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.B.updateByPrimaryKeySelective    : ==> Parameters: true(Boolean), true(Boolean), 最近自己做了个SpringBoot的入门让你实战项目，然后通过ssh连接到远程服务器把项目部署起来了，但是我发现关掉ssh连接之后，就访问不了自己的网站了，也就是说在关闭ssh连接之后,我之前在ssh连接之下启动的程序也被一起关闭了，这就很难受了，为了解决这个问题我特意查询了一番，发现了一个简单的解决方法！(String), http://117.50.63.69/upload/2020/11/openssh-82-novedades-11ec893f50804615bcd469d9562f0eb1.jpg(String), 原创(String), true(Boolean), true(Boolean), true(Boolean), ssh连接服务器中断，如何让命令继续在服务器执行(String), 2020-11-09 17:43:05.748(Timestamp), 3(Long), java.io.StringReader@2c8a84ba(StringReader), 2(Long)
+2020-11-09 17:43:05.761 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.B.updateByPrimaryKeySelective    : <==    Updates: 1
+2020-11-09 17:43:05.762 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogExtMapper.get_bt_tgId   : ==>  Preparing: SELECT tag_id FROM blog_tag WHERE blog_id=? 
+2020-11-09 17:43:05.762 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogExtMapper.get_bt_tgId   : ==> Parameters: 2(Long)
+2020-11-09 17:43:05.763 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogExtMapper.get_bt_tgId   : <==      Total: 1
+2020-11-09 17:43:05.764 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.B.delete_some_BlogTag            : ==>  Preparing: DELETE FROM blog_tag WHERE blog_id=? AND tag_id=? 
+2020-11-09 17:43:05.764 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.B.delete_some_BlogTag            : ==> Parameters: 2(Long), 2(Long)
+2020-11-09 17:43:05.766 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.B.delete_some_BlogTag            : <==    Updates: 1
+2020-11-09 17:43:05.767 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.insertBlogTag      : ==>  Preparing: INSERT INTO blog_tag (blog_id,tag_id) VALUES (?,?) 
+2020-11-09 17:43:05.767 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.insertBlogTag      : ==> Parameters: 2(Long), 7(Long)
+2020-11-09 17:43:05.768 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.insertBlogTag      : <==    Updates: 1
+2020-11-09 17:43:05.819 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:43:05.819 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:43:05.820 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:43:05.821 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:43:05.821 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:43:05.823 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 2
+2020-11-09 17:43:05.829 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:43:05.829 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:43:05.830 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:43:09.530  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blogs', args=[1, 5, {}]}
+2020-11-09 17:43:09.533 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:43:09.534 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:43:09.537 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:43:09.538 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:43:09.538 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:43:09.561 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 2
+2020-11-09 17:43:09.568 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:43:09.569 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:43:09.571 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:43:09.576  INFO 338501 --- [http-nio-8090-exec-3] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-09 17:43:10.020  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:43:10.020  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:43:20.220  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/blog/2', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blog', args=[2, {}]}
+2020-11-09 17:43:20.223 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.myblog.mapper.BlogExtMapper.incView  : ==>  Preparing: UPDATE blog SET views = views + 1 WHERE id=? 
+2020-11-09 17:43:20.223 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.myblog.mapper.BlogExtMapper.incView  : ==> Parameters: 2(Long)
+2020-11-09 17:43:20.228 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==>  Preparing: SELECT b.*,ty.name,ty.id ty_id,tg.name tag_name,tg.id tg_id,u.avatar,u.nickname FROM blog b LEFT OUTER JOIN `type` ty ON b.type_id=ty.id LEFT OUTER JOIN blog_tag bt ON b.id=bt.blog_id LEFT OUTER JOIN tag tg ON bt.tag_id=tg.id LEFT OUTER JOIN `user` u ON b.user_id=u.id WHERE b.id=? 
+2020-11-09 17:43:20.228 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==> Parameters: 2(Long)
+2020-11-09 17:43:20.230 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.getUnionBlogById   : <==      Total: 1
+2020-11-09 17:43:20.238  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Return : blog
+2020-11-09 17:43:20.915  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:43:20.916  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:43:21.002  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/comments/2', ip='119.123.123.29', classMethod='com.seven.myblog.controller.CommentController.list', args=[2, {}]}
+2020-11-09 17:43:21.004 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( blog_id = ? and parent_comment_id is null ) 
+2020-11-09 17:43:21.005 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 2(Long)
+2020-11-09 17:43:21.006 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 0
+2020-11-09 17:43:21.009  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Return : blog::commentList
+2020-11-09 17:43:55.287  INFO 338501 --- [http-nio-8090-exec-7] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blogs', args=[1, 5, {}]}
+2020-11-09 17:43:55.290 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:43:55.290 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:43:55.297 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:43:55.298 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:43:55.298 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:43:55.303 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 2
+2020-11-09 17:43:55.308 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:43:55.308 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:43:55.309 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:43:55.310  INFO 338501 --- [http-nio-8090-exec-7] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-09 17:43:55.636  INFO 338501 --- [http-nio-8090-exec-8] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:43:55.637  INFO 338501 --- [http-nio-8090-exec-8] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:44:06.833 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:44:06.834 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:44:06.845 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:44:06.870 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC 
+2020-11-09 17:44:06.870 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 
+2020-11-09 17:44:06.872 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 7
+2020-11-09 17:45:27.894 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.BlogMapper.insertSelective  : ==>  Preparing: insert into blog ( appreciation, commentabled, create_time, description, first_picture, flag, published, recommend, share_statement, title, update_time, views, type_id, user_id, comment_count, content ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-09 17:45:27.896 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.BlogMapper.insertSelective  : ==> Parameters: true(Boolean), true(Boolean), 2020-11-09 17:45:27.876(Timestamp), 最近做了一个SpringBoot入门项目，是一个较小的论坛项目，感觉还不错分享给大家！总的来说还是挺简单的，最好先去B站学习一下SpringBoot的入门，再去做这个项目，上手起来会轻松很多(String), http://117.50.63.69/upload/2020/11/Snipaste_2020-11-03_18-49-35-14748028ce3142a9b7a7aad2b11c0437.png(String), 原创(String), true(Boolean), true(Boolean), true(Boolean), SpringBoot实战项目-community(String), 2020-11-09 17:45:27.876(Timestamp), 0(Integer), 1(Long), 1(Long), 0(Integer), java.io.StringReader@38d57f50(StringReader)
+2020-11-09 17:45:27.913 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.BlogMapper.insertSelective  : <==    Updates: 1
+2020-11-09 17:45:27.914 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.B.insertSelective!selectKey      : ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-11-09 17:45:27.914 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.B.insertSelective!selectKey      : ==> Parameters: 
+2020-11-09 17:45:27.921 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.B.insertSelective!selectKey      : <==      Total: 1
+2020-11-09 17:45:27.922 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : ==>  Preparing: INSERT INTO blog_tag (blog_id,tag_id) VALUES (?,?) 
+2020-11-09 17:45:27.922 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : ==> Parameters: 3(Long), 2(Long)
+2020-11-09 17:45:27.931 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : <==    Updates: 1
+2020-11-09 17:45:27.931 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : ==>  Preparing: INSERT INTO blog_tag (blog_id,tag_id) VALUES (?,?) 
+2020-11-09 17:45:27.931 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : ==> Parameters: 3(Long), 4(Long)
+2020-11-09 17:45:27.932 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : <==    Updates: 1
+2020-11-09 17:45:27.932 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : ==>  Preparing: INSERT INTO blog_tag (blog_id,tag_id) VALUES (?,?) 
+2020-11-09 17:45:27.933 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : ==> Parameters: 3(Long), 3(Long)
+2020-11-09 17:45:27.934 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.insertBlogTag      : <==    Updates: 1
+2020-11-09 17:45:27.987 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:45:27.987 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:45:27.989 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:45:27.990 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:45:27.990 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:45:27.992 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 3
+2020-11-09 17:45:28.000 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:45:28.000 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:45:28.002 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:45:34.092  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blogs', args=[1, 5, {}]}
+2020-11-09 17:45:34.096 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:45:34.096 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:45:34.098 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:45:34.100 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:45:34.100 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:45:34.102 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 3
+2020-11-09 17:45:34.107 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:45:34.107 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:45:34.108 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:45:34.110  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-09 17:45:34.524  INFO 338501 --- [http-nio-8090-exec-7] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:45:34.524  INFO 338501 --- [http-nio-8090-exec-7] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:45:54.104 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==>  Preparing: SELECT b.*,ty.name,ty.id ty_id,tg.name tag_name,tg.id tg_id,u.avatar,u.nickname FROM blog b LEFT OUTER JOIN `type` ty ON b.type_id=ty.id LEFT OUTER JOIN blog_tag bt ON b.id=bt.blog_id LEFT OUTER JOIN tag tg ON bt.tag_id=tg.id LEFT OUTER JOIN `user` u ON b.user_id=u.id WHERE b.id=? 
+2020-11-09 17:45:54.105 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==> Parameters: 1(Long)
+2020-11-09 17:45:54.109 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.getUnionBlogById   : <==      Total: 2
+2020-11-09 17:45:54.115 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:45:54.115 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:45:54.117 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:45:54.121 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC 
+2020-11-09 17:45:54.122 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 
+2020-11-09 17:45:54.123 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 7
+2020-11-09 17:45:59.772 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogMapper.selectByPrimaryKey    : ==>  Preparing: select id, appreciation, commentabled, create_time, description, first_picture, flag, published, recommend, share_statement, title, update_time, views, type_id, user_id, comment_count , content from blog where id = ? 
+2020-11-09 17:45:59.773 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogMapper.selectByPrimaryKey    : ==> Parameters: 1(Long)
+2020-11-09 17:45:59.784 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.BlogMapper.selectByPrimaryKey    : <==      Total: 1
+2020-11-09 17:45:59.785 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.B.updateByPrimaryKeySelective    : ==>  Preparing: update blog SET appreciation = ?, commentabled = ?, description = ?, first_picture = ?, flag = ?, published = ?, recommend = ?, share_statement = ?, title = ?, update_time = ?, type_id = ?, content = ? where id = ? 
+2020-11-09 17:45:59.786 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.B.updateByPrimaryKeySelective    : ==> Parameters: true(Boolean), true(Boolean), 最近又找了个SpringBoot入门实战项目做，做起来还是挺简单的，还是个博客项目，做完后自己也能搭一个比较小巧的博客了，项目虽小，五脏俱全，还是能满足博客的基本需求的，这里就为大家详细介绍一下。(String), http://117.50.63.69/upload/2020/11/%E5%8D%9A%E5%AE%A2%E5%B1%95%E7%A4%BA-436c1bf0bf1b47139714ab679c95b62c.png(String), 原创(String), true(Boolean), true(Boolean), true(Boolean), SpringBoot入门实战项目2--小而美的个人博客(String), 2020-11-09 17:45:59.766(Timestamp), 1(Long), java.io.StringReader@58792ca9(StringReader), 1(Long)
+2020-11-09 17:45:59.795 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.m.B.updateByPrimaryKeySelective    : <==    Updates: 1
+2020-11-09 17:45:59.796 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.BlogExtMapper.get_bt_tgId   : ==>  Preparing: SELECT tag_id FROM blog_tag WHERE blog_id=? 
+2020-11-09 17:45:59.796 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.BlogExtMapper.get_bt_tgId   : ==> Parameters: 1(Long)
+2020-11-09 17:45:59.798 DEBUG 338501 --- [http-nio-8090-exec-10] c.s.m.mapper.BlogExtMapper.get_bt_tgId   : <==      Total: 2
+2020-11-09 17:45:59.850 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:45:59.850 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:45:59.866 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:45:59.867 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:45:59.868 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:45:59.871 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 3
+2020-11-09 17:45:59.875 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:45:59.875 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:45:59.876 DEBUG 338501 --- [http-nio-8090-exec-3] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:46:03.605 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.selectByExample_COUNT          : ==>  Preparing: SELECT count(0) FROM type 
+2020-11-09 17:46:03.605 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.selectByExample_COUNT          : ==> Parameters: 
+2020-11-09 17:46:03.609 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.m.T.selectByExample_COUNT          : <==      Total: 1
+2020-11-09 17:46:03.611 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC LIMIT ? 
+2020-11-09 17:46:03.611 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 5(Integer)
+2020-11-09 17:46:03.613 DEBUG 338501 --- [http-nio-8090-exec-5] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:46:04.717 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.TagMapper.selectByExample_COUNT  : ==>  Preparing: SELECT count(0) FROM tag 
+2020-11-09 17:46:04.717 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.TagMapper.selectByExample_COUNT  : ==> Parameters: 
+2020-11-09 17:46:04.720 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.m.TagMapper.selectByExample_COUNT  : <==      Total: 1
+2020-11-09 17:46:04.721 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==>  Preparing: select id, name from tag order by id DESC LIMIT ? 
+2020-11-09 17:46:04.721 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : ==> Parameters: 5(Integer)
+2020-11-09 17:46:04.723 DEBUG 338501 --- [http-nio-8090-exec-1] c.s.m.mapper.TagMapper.selectByExample   : <==      Total: 5
+2020-11-09 17:46:08.328 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:46:08.329 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:46:08.330 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:46:08.331 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:46:08.331 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:46:08.334 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 3
+2020-11-09 17:46:08.338 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:46:08.338 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:46:08.339 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:46:26.435 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, avatar, create_time, email, nickname, password, " type", update_time, username from user WHERE ( username = ? and password = ? ) 
+2020-11-09 17:46:26.436 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.UserMapper.selectByExample  : ==> Parameters: zhangsan(String), 123(String)
+2020-11-09 17:46:26.438 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-11-09 17:46:33.648 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:46:33.648 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:46:33.653 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:46:33.654 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:46:33.654 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:46:33.657 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 3
+2020-11-09 17:46:33.660 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : ==>  Preparing: select id, name from type order by id DESC 
+2020-11-09 17:46:33.661 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : ==> Parameters: 
+2020-11-09 17:46:33.662 DEBUG 338501 --- [http-nio-8090-exec-7] c.s.m.mapper.TypeMapper.selectByExample  : <==      Total: 5
+2020-11-09 17:50:53.457  INFO 338501 --- [http-nio-8090-exec-6] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/blog/3', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blog', args=[3, {}]}
+2020-11-09 17:50:53.460 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.myblog.mapper.BlogExtMapper.incView  : ==>  Preparing: UPDATE blog SET views = views + 1 WHERE id=? 
+2020-11-09 17:50:53.460 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.myblog.mapper.BlogExtMapper.incView  : ==> Parameters: 3(Long)
+2020-11-09 17:50:53.463 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==>  Preparing: SELECT b.*,ty.name,ty.id ty_id,tg.name tag_name,tg.id tg_id,u.avatar,u.nickname FROM blog b LEFT OUTER JOIN `type` ty ON b.type_id=ty.id LEFT OUTER JOIN blog_tag bt ON b.id=bt.blog_id LEFT OUTER JOIN tag tg ON bt.tag_id=tg.id LEFT OUTER JOIN `user` u ON b.user_id=u.id WHERE b.id=? 
+2020-11-09 17:50:53.464 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.getUnionBlogById   : ==> Parameters: 3(Long)
+2020-11-09 17:50:53.466 DEBUG 338501 --- [http-nio-8090-exec-6] c.s.m.m.BlogExtMapper.getUnionBlogById   : <==      Total: 3
+2020-11-09 17:50:53.474  INFO 338501 --- [http-nio-8090-exec-6] com.seven.myblog.aspect.LogAspect        : Return : blog
+2020-11-09 17:50:54.654  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:50:54.655  INFO 338501 --- [http-nio-8090-exec-1] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:50:54.739  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/comments/3', ip='119.123.123.29', classMethod='com.seven.myblog.controller.CommentController.list', args=[3, {}]}
+2020-11-09 17:50:54.742 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.CommentMapper.selectByExample    : ==>  Preparing: select id, nickname, email, content, avatar, create_time, blog_id, parent_comment_id, admin_comment from comment WHERE ( blog_id = ? and parent_comment_id is null ) 
+2020-11-09 17:50:54.743 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.CommentMapper.selectByExample    : ==> Parameters: 3(Long)
+2020-11-09 17:50:54.745 DEBUG 338501 --- [http-nio-8090-exec-2] c.s.m.m.CommentMapper.selectByExample    : <==      Total: 0
+2020-11-09 17:50:54.747  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Return : blog::commentList
+2020-11-09 17:51:05.204  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/archives', ip='119.123.123.29', classMethod='com.seven.myblog.controller.ArchiveController.archive', args=[{}]}
+2020-11-09 17:51:05.229 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:51:05.229 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:51:05.236 DEBUG 338501 --- [http-nio-8090-exec-9] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:51:05.252  INFO 338501 --- [http-nio-8090-exec-9] com.seven.myblog.aspect.LogAspect        : Return : archives
+2020-11-09 17:51:05.694  INFO 338501 --- [http-nio-8090-exec-5] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:51:05.694  INFO 338501 --- [http-nio-8090-exec-5] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:51:07.921  INFO 338501 --- [http-nio-8090-exec-8] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.blogs', args=[1, 5, {}]}
+2020-11-09 17:51:07.925 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==>  Preparing: SELECT count(0) FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id = t.id LEFT OUTER JOIN `user` u ON b.user_id = u.id 
+2020-11-09 17:51:07.926 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.listUnion_COUNT    : ==> Parameters: 
+2020-11-09 17:51:07.931 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.m.BlogExtMapper.listUnion_COUNT    : <==      Total: 1
+2020-11-09 17:51:07.932 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogExtMapper.listUnion     : ==>  Preparing: SELECT b.*,t.name,u.avatar,u.nickname FROM `blog` b LEFT OUTER JOIN `type` t ON b.type_id=t.id LEFT OUTER JOIN `user` u ON b.user_id=u.id ORDER BY update_time DESC LIMIT ? 
+2020-11-09 17:51:07.932 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogExtMapper.listUnion     : ==> Parameters: 5(Integer)
+2020-11-09 17:51:07.937 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogExtMapper.listUnion     : <==      Total: 3
+2020-11-09 17:51:07.947 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.countByExample   : ==>  Preparing: select count(*) from blog 
+2020-11-09 17:51:07.948 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.countByExample   : ==> Parameters: 
+2020-11-09 17:51:07.949 DEBUG 338501 --- [http-nio-8090-exec-8] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
+2020-11-09 17:51:07.950  INFO 338501 --- [http-nio-8090-exec-8] com.seven.myblog.aspect.LogAspect        : Return : index
+2020-11-09 17:51:08.475  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://117.50.63.69:8090/footer/newblog', ip='119.123.123.29', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
+2020-11-09 17:51:08.475  INFO 338501 --- [http-nio-8090-exec-2] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:51:29.984  INFO 338501 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-11-09 17:51:29.985  INFO 338501 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+=======
 2020-11-09 17:37:06.596  INFO 35508 --- [restartedMain] com.seven.myblog.MyblogApplication       : Starting MyblogApplication on loveBusty with PID 35508 (E:\JAVA\JetBrains\IdeaProjects\myblog\target\classes started by yuanyuanyuan in E:\JAVA\JetBrains\IdeaProjects\myblog)
 2020-11-09 17:37:06.598  INFO 35508 --- [restartedMain] com.seven.myblog.MyblogApplication       : No active profile set, falling back to default profiles: default
 2020-11-09 17:37:06.639  INFO 35508 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in E:\JAVA\apache-maven-3.6.3\maven_repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/E:/JAVA/apache-maven-3.6.3/maven_repository/javax/mail/mail/1.4/activation.jar
@@ -819,4 +1428,4 @@
 2020-11-09 17:49:57.421 DEBUG 35508 --- [http-nio-8080-exec-10] c.s.m.mapper.BlogMapper.countByExample   : <==      Total: 1
 2020-11-09 17:49:57.421  INFO 35508 --- [http-nio-8080-exec-10] com.seven.myblog.aspect.LogAspect        : Return : index
 2020-11-09 17:49:57.702  INFO 35508 --- [http-nio-8080-exec-6] com.seven.myblog.aspect.LogAspect        : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.seven.myblog.controller.IndexController.newBlog', args=[{}]}
-2020-11-09 17:49:57.702  INFO 35508 --- [http-nio-8080-exec-6] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList
+2020-11-09 17:49:57.702  INFO 35508 --- [http-nio-8080-exec-6] com.seven.myblog.aspect.LogAspect        : Return : _fragments::newblogList0
