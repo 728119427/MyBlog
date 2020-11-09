@@ -87,7 +87,9 @@
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
   <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
 
-
+  <script>
+    $('#newblog-container').load(/*[[@{/admin/footer/newblog}]]*/"/admin/footer/newblog");
+  </script>
 </th:block>
 
 </body>

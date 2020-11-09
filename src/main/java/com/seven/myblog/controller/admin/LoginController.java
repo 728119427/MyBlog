@@ -1,5 +1,7 @@
 package com.seven.myblog.controller.admin;
 
+import com.seven.myblog.cache.IndexCache;
+import com.seven.myblog.model.Blog;
 import com.seven.myblog.model.User;
 import com.seven.myblog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +15,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/admin")
 public class LoginController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private IndexCache indexCache;
 
     @GetMapping("/")
     public String loginPage(){
@@ -59,5 +65,13 @@ public class LoginController {
     public String logout(HttpServletRequest request){
         request.getSession().removeAttribute("user");
         return "redirect:/admin/";
+    }
+
+    @GetMapping("/footer/newblog")
+    public String newBlog(Model model){
+        List<Blog> newblogs = indexCache.getRecommendBlogs().stream().limit(3).collect(Collectors.toList());
+        model.addAttribute("newblogs",newblogs);
+        return "admin/_fragments::newblogList";
+
     }
 }
